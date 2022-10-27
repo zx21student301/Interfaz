@@ -1,0 +1,8 @@
+div{
+    background-color: pink;
+}
+.div2{
+    position: relative;
+    left:15px;
+    top:5px;
+}

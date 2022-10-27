@@ -1,0 +1,344 @@
+body {
+    background: url("https://static-dm.akamaized.net/siege/prod/fe44dc601d5a0312a78258c19b2f9e5e.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.cabecera {
+    height: 1.5em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+    min-width: 250px;
+    flex-wrap: wrap;
+}
+
+.fb {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ig {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.twitch {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.twit {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ubiLogo {
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.titulo {
+    margin: 10px;
+    margin-top: 15px;
+    height: 100px;
+    text-align: center;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+.center {
+    float: left;
+    width: 100%;
+}
+
+.r6Titulo {
+    width: 350px;
+}
+
+nav{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color: black;
+}
+
+.menu {
+    padding: 10px;
+    margin-bottom:10px;
+    margin-top: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+.lista_menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media (min-width:759px) {
+    .lista_menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+.li_menu {
+    font-family: 'Ghost Clan 3D', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.li_menu:hover {
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.5), rgba(0, 255, 230, 0) 50%);
+    border-bottom: 5px solid rgba(255, 0, 0, 0.39);
+}
+
+.URLInicio,
+.URLNoticias,
+.URLAgentes,
+.URLModMap,
+.URLEsports {
+    text-decoration: none;
+    color: #BFBA9F;
+    font-family: 'Ghost Clan 3D', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.URLInicio:hover,
+.URLNoticias:hover,
+.URLAgentes:hover,
+.URLModMap:hover,
+.URLEsports:hover {
+    color: white;
+}
+
+.cuerpo{
+    display: flex;
+    flex-flow: row;
+}
+
+.indice {
+    display: none;
+}
+
+.contenido {
+    position: relative;
+    width: 100%;
+    border: 5px solid black;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+.indice_reducido{
+    display: inline;
+    width: 100%;
+    padding: 10px;
+}
+
+.titulosO{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    list-style: none;
+}
+
+.tituloAtacantesO{
+    font-size: 20px;
+}
+
+.tituloAtacantesO > ul{
+    display: none;
+    position: absolute;
+}
+
+.tituloAtacantesO:hover ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.listaAtacantesO{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.tituloDefensoresO{
+    font-size: 20px;
+}
+
+.tituloDefensoresO > ul{
+    display: none;
+    position: absolute;
+}
+
+.tituloDefensoresO:hover ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.listaDefensores{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+
+@media (min-width:759px) {
+    .indice {
+        display: block;
+        position: relative;
+        width: 20%;
+        flex-wrap: wrap;
+        min-width: 250px;
+        background-color: none;
+        transition-property: background;
+        transition-delay: 0.5s;
+        transition-duration: 0.9s;
+    }
+
+    .indice:hover{
+        background-color: black;
+        transition-property: background;
+        transition-delay: 0.5s;
+        transition-duration: 0.9s;
+    }
+
+    .titulos{
+        list-style: none;
+        padding: 10px;
+    }
+
+    .sold{
+        font-size: 20px;
+        font-family: 'Ghost Clan Gradient', sans-serif;
+        color: rgb(255, 0, 0);
+    }
+
+    .tituloAtacantes{
+        font-size: 20px;
+        font-family: 'Ghost Clan', sans-serif;
+        color: white;
+    }
+
+    .tituloDefensores{
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: 'Ghost Clan', sans-serif;
+        color: white;
+    }
+
+    .lA{
+        padding: 5px;
+    }
+
+    .lA > ul{
+        display: none;
+    }
+
+    .hbList{
+        padding: 3px;
+        list-style: none;
+    }
+
+    .efList{
+        padding: 3px;
+        list-style: none;
+    }
+    
+    .supList{
+        padding: 3px;
+        list-style: none;
+    }
+    
+
+    .flexListA{
+        padding: 3px;
+        list-style: none;
+    }
+
+    .lD{
+        padding: 5px;
+    }
+
+    .lD > ul{
+        display: none;
+    }
+
+    .anList{
+        padding: 3px;
+        list-style: none;
+    }
+
+    .roamList{
+        padding: 3px;
+        list-style: none;
+    }
+
+    .trampList{
+        padding: 3px;
+        list-style: none;
+    }
+
+    .flexListD{
+        padding: 3px;
+        list-style: none;
+    }
+    
+    ul{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .contenido {
+        position: relative;
+        width: 80%;
+        border: 5px solid black;
+        flex-wrap: wrap;
+        min-width: 250px;
+        color:white;
+    }
+
+    .indice_reducido{
+        display: none;
+    }
+}
+
+.pie {
+    border: 5px solid rgb(255, 255, 255);
+    color:white;
+    flex-wrap: wrap;
+    min-width: 250px;
+}

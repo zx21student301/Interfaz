@@ -1,0 +1,14 @@
+Boceto : https://wireframe.cc/XG31cu
+
+Colores: #BFBA9F #8C8581 #F2F2F2 #262626 #0D0D0D (https://color.adobe.com/es/061118-rainbow-six-siege-m-color-theme-13590095/)
+
+Tipografía: Sans-serif
+
+imagenes: Logo 1 -> https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5RMQ9vwghls0An4wzhKtz7/3c388f184ed770579bd7648818583ffd/footer_logo.png
+	Logo 2 -> https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/DAwqy5hMljnxm7evA5ASN/adeff1c13522f7f96ca06d550b9a5892/r6s-y6-logo.png
+	Fondo pagina -> https://static-dm.akamaized.net/siege/prod/0342b011a5f0107d106a49decafaf050.png
+	Fondo 2 -> https://static-dm.akamaized.net/siege/prod/5eef82006481bc61377afb6e186f5785.jpg
+	Fondo 3 -> https://static-dm.akamaized.net/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg
+	Imagen 1 -> https://static-dm.akamaized.net/siege/prod/fe44dc601d5a0312a78258c19b2f9e5e.jpg
+	Imagen 2 -> https://static-dm.akamaized.net/siege/prod/4e6527654a37f55113131307ff1aaec0.jpg
+	Imagen 3 -> https://static-dm.akamaized.net/siege/prod/d898346801d71209c22ada4e0b6b725e.jpg

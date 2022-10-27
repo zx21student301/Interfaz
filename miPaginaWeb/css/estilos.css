@@ -1,0 +1,194 @@
+body {
+    background: url("https://static-dm.akamaized.net/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.cabecera {
+    height: 1.5em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+    min-width: 250px;
+    flex-wrap: wrap;
+}
+
+.fb {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ig {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.twitch {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.twit {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ubiLogo {
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.titulo {
+    margin: 10px;
+    margin-top: 15px;
+    height: 100px;
+    text-align: center;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+.center {
+    float: left;
+    width: 100%;
+}
+
+.r6Titulo {
+    width: 350px;
+}
+
+nav{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color: black;
+}
+
+.menu {
+    padding: 10px;
+    margin-bottom:10px;
+    margin-top: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+.lista_menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media (min-width: 768px){
+    .lista_menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+.URLInicio,
+.URLNoticias,
+.URLAgentes,
+.URLModMap,
+.URLEsports {
+    text-decoration: none;
+    color: #BFBA9F;
+    font-family: 'Ghost Clan 3D', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.URLInicio:hover,
+.URLNoticias:hover,
+.URLAgentes:hover,
+.URLModMap:hover,
+.URLEsports:hover {
+    color: #ffffff;
+}
+
+.li_menu {
+    font-family: 'Ghost Clan 3D', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.li_menu:hover {
+    background: linear-gradient(0deg, rgba(0, 255, 230, .5), rgba(0, 255, 230, 0) 50%);
+    border-bottom: 5px solid rgba(0, 255, 229, 0.39);
+}
+
+.cuerpo {
+    border: 5px solid black;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+.pie {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    min-width: 250px;
+}
+
+.servicioCliente {
+    position: fixed;
+    width: 40%;
+}
+
+.titulo_sc {
+    font-size: 15px;
+}
+
+.Preg {
+    display: inline;
+}
+
+.soporte {
+    display: inline;
+}
+
+.infoAdicional {
+    position: fixed;
+    left: 40%;
+    width: 40%;
+}
+
+.listCliente{
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.titulo_ia {
+    font-size: 15px;
+}
+
+.pegi18 {
+    float: right;
+    width: 20%;
+    text-align: center;
+}
+
+.logo_18 {
+    width: 35px;
+}

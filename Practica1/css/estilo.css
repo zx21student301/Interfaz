@@ -1,0 +1,29 @@
+div.cabecera{
+    background:black;
+    border-bottom: 5px dashed white ;
+}
+
+#titulo{
+    color:white;
+}
+
+div.cajaBotones{
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+#btn1:hover{
+    background: yellow;
+}
+
+#btn2:hover{
+    background: yellow;
+}
+
+#btn3:hover{
+    background: yellow;
+}
+
+a{
+    text-decoration: none;
+}

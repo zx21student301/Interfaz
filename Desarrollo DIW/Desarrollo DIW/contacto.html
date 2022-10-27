@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <title>Desarrollo de Aplicaciones Web - Inicio</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Página de 2º de DAW"/>
+        <meta name="keywords" content="daw, desarrollo, interfaces"/>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    
+    <body>
+        
+        <header id="cabeceraweb">
+            <figure><a href="index.html" id="inicio"><img id="logoVdM" src="img/Logo Valle del Miro.png" alt="Logo VdM"></a></figure>
+            <h1><strong>D.A.W.</strong>Diseño de Interfaces Web</h1>
+        </header> 
+        
+        <nav id="navegacion_contacto">
+            <ul id="menu">
+                <li><a href="daw.html" id="daw">DAW 2</a></li>
+                <li><a href="somos.html" id="somos">¿Quienes somos?</a></li>
+                <li><a href="contacto.html" id="contacto">Cantacta con nosotros</a></li>                
+            </ul>
+        </nav>
+
+        <section id="contenidoprincipal">
+
+            <h1 class="titulo">Técnico Superior en Desarrollo de Aplicaciones Web</h1>
+            <h2 class="apartados">Contacta con nosotros...</h2>
+            <p class="descrip">
+                Contacta con nosotros, coméntanos tus dudas, inquietudes, dudas o experiencias. Lo que necesites.
+            </p>
+            <p class="descrip">
+                <form id="formulario">
+                <table>
+                    <tr>
+                        <th id="cabecera">Nombre:</th>
+                        <td><input type="text" name="nombre" size="25" autofocus required /></td>
+                    </tr>
+                    <tr>
+                        <th id="cabecera">Apellidos:</th>
+                        <td><input type="text" name="apellidos" size="80" required /></td>
+                    </tr>
+                    <tr>
+                        <th id="cabecera">Email:</th>
+                        <td><input type="email" name="email" size="80" /></td>
+                    </tr>
+                    <tr>
+                        <th id="cabecera">Teléfono:</th>
+                        <td><input type="tel" name="telefono" size="60"/></td>
+                    </tr>                                       
+                    <tr>
+                        <th id="cabecera">Fecha de Nacimiento:</th>
+                        <td><input type="date" name="fec_nac" /></td>
+                    </tr> 
+                    <tr>
+                        <th id="cabecera" colspan="2"><div class="separacion">Cuéntanos cosas sobre ti...</div></th>
+                    </tr> 
+                    <tr>
+                        <th id="cabecera">¿Cómo nos has conocido?:</th>
+                        <td><select name="conocido">
+                                <option value="internet">Buscando por Internet.</option>
+                                <option value="conocido">Recomendación de un conocido.</option>
+                                <option value="radio">Anuncio en prensa o radio.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th id="cabecera">Dinos tus intereses:</th>
+                        <td>
+                                <input id="check" type="checkbox" name="int_peliculas" />Ver pel&iacute;culas y series.
+                                <br>
+                                <input id="check" type="checkbox" name="int_jugar" />Jugar a videojuegos.
+                                <br>
+                                <input id="check" type="checkbox" name="int_deporte" />Practicar alg&uacute;n deporte.
+                            </td>
+                    </tr> 
+                    <tr>
+                        <th id="cabecera">Dinos tu color favorito:</th>
+                        <td><input type="color" name="color_fav" /></td>
+                    </tr>  
+                    <tr>
+                        <th id="cabecera" colspan="2"><div class="separacion"><button type="submit">Enviar formulario</button> &nbsp;&nbsp;<button type="reset">Limpiar formulario</button></div></th>
+                    </tr>                     
+                </table>
+                </form>
+            </p>
+            <p class="descrip">&nbsp;</p>
+        </section>
+
+        <footer id="pieprincipal">
+            <h3>Desarrollo de Aplicaciones Web - Curso 2022/2023 - <span id="autor"><a href="mailto:miguel.soto@colegiovalledelmiro.es"><img src="img/email.gif" alt="email">&nbsp;Desarrollado por Miguel Soto Lombris</a></span></h3>
+        </footer>
+    </body>
+
+</html>

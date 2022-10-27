@@ -1,0 +1,40 @@
+.cabecera{
+    width: 840px;
+    padding: 10px;
+}
+
+.menu{
+    background-color: lightsalmon;
+    width: 150px;
+    float:left;
+    height: 200px;
+    text-align: center;
+}
+
+.principal{
+    background-color: white;
+    width: 510px;
+    float:left;
+    left: 150px;
+    height: 200px;
+    text-align: center;
+}
+
+.lateral{
+    background-color: skyblue;
+    width: 200px;
+    float:left;
+    left:660px;
+    height: 200px;
+    text-align: center;
+}
+
+.text{
+    margin-top: 100px;
+}
+
+.pie{
+    background-color: pink;
+    width: 840px;
+    padding: 10px;
+}

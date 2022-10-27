@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="C:\Users\zx21student301\Desktop\DAW2\Interfaz\Practica1\Imágenes\contacto.png">
+    <link rel="stylesheet" href="css\estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body bgcolor="lightgrey">
+    <!--Tabla que contiene el formulario-->
+    <table align="center">
+        <td>
+            <!--Formulario-->
+            <form class="" action="index.html" method="post" enctype="multipart/form-data" target="_self">
+                <fieldset border="2px black">
+                    <!--Leyenda del formulario-->
+                    <legend id="leyenda">
+                        <h1>Formulario de contacto</h1>
+                    </legend>
+                    <!--Cajas de texto para rellenar-->
+                    <label id="nombre">DNI:</label>
+                    <input type="text" name="nombre" placeholder="Escribe tu DNI/NIE" required>
+                    <br>
+                    <br>
+                    <label id="pwd">Contraseña</label>
+                    <input type="password" name="contraseña" placeholder="Escriba su contraseña" required>
+                    <br>
+                    <br>
+                    <!--Caja tipo fecha para rellenar-->
+                    <label id="mes">Introduce tu fecha de nacimiento</label>
+                    <input type="date" name="fechaNac" required>
+                    <br>
+                    <br>
+                    <label>Correo electrónico</label>
+                    <input type="text" name="nombre" placeholder="Escribe tu email" required>
+                    <!--Selector de opciones-->
+                    <select name="p2">
+                        <option>@gmail.com</option>
+                        <option>@yahoo.com</option>
+                        <option>@hotmail.com</option>
+                    </select>
+                    <br>
+                    <br>
+                    <!--Botones radio-->
+                    <label id="preg1">¿Desea recibir correos electrónicos con información adicional</label>
+                    <input type="radio" name="p1" value="" checked>No
+                    <input type="radio" name="p1" value="">Si
+                    <br>
+                    <br>
+                    <!--Botón para borrar todos los datos rellenos en el formulario-->
+                    <input type="reset" name="borrar" value="Borrar formulario">
+                    <br>
+                    <br>
+                    <!--Botón para enviar los datos introducidos en el formulario-->
+                    <input type="submit" name="envio" value="Enviar formulario">
+                    <br>
+                    <br>
+                    <!--Check Box-->
+                    <input type="checkbox" name="condiciones" value="Aceptar condiciones" required>
+                    <label id="acepCond">Aceptar condiciones</label>
+                </fieldset>
+            </form>
+        </td>
+    </table>
+    <p><a href="index.html"><img src="C:\Users\zx21student301\Desktop\DAW2\Interfaz\Practica1\Imágenes\flecha.png" width="40px"></a></p>
+</body>
+
+</html>

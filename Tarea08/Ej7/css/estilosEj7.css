@@ -1,0 +1,26 @@
+.divA{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 25px;
+    top:25px;
+}
+
+.divV{
+    background-color: green;
+    position:absolute;
+    z-index: 2;
+    left: 50px;
+    top:50px;
+    width: 50%;
+    height: 50%;
+}
+.divR{
+    background-color: red;
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    height: 50%;
+}
