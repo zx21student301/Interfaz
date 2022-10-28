@@ -1,10 +1,12 @@
 .lista{
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
 }
 
 .elem{
     color:red;
-    display: inline;
     padding-left: 5%;
     padding-right: 5%;
     border-left: 1px black solid;
