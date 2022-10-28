@@ -1,0 +1,20 @@
+.lista{
+    width: 100%;
+}
+
+.elem{
+    color:red;
+    display: inline;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-left: 1px black solid;
+    border-right: none;
+}
+
+.elem:last-child{
+    border-right: 1px solid black;
+}
+
+.elem:hover{
+    background-color: blue;
+}

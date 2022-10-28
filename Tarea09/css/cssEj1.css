@@ -1,0 +1,19 @@
+.lista{
+    display:list-item;
+    width: 10%;
+}
+
+
+.elem{
+    border: 1px black solid;
+    padding: 5px;
+    width: 100%;
+    list-style:url("img/flecha_inactiva.png") inside;
+}
+
+
+.elem:hover{
+    background-color: darkgrey;
+    padding: 5px;
+    list-style:url("img/flecha_activa.png") inside;
+}
