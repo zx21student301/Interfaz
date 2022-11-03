@@ -150,8 +150,22 @@ nav{
     min-width: 250px;
 }
 
+.listaPie{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    width: 100%;
+}
+
+.liPie1, .liPie2{
+    width: 40%;
+}
+
+.liPie3{
+    width: 20%;
+}
+
 .servicioCliente {
-    position: fixed;
     width: 40%;
 }
 
@@ -168,15 +182,12 @@ nav{
 }
 
 .infoAdicional {
-    position: fixed;
-    left: 40%;
     width: 40%;
 }
 
 .listCliente{
     display: flex;
     flex-flow: column wrap;
-
 }
 
 .titulo_ia {
@@ -184,11 +195,10 @@ nav{
 }
 
 .pegi18 {
-    float: right;
     width: 20%;
     text-align: center;
 }
 
 .logo_18 {
-    width: 35px;
+    width: 60px;
 }
