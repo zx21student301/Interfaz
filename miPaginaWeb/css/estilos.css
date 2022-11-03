@@ -94,7 +94,7 @@ nav{
     list-style: none;
 }
 
-@media (min-width: 768px){
+@media (min-width: 759px){
     .lista_menu {
         display: flex;
         flex-flow: row wrap;

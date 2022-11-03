@@ -168,37 +168,7 @@ nav{
     list-style: none;
 }
 
-.tituloAtacantesO{
-    font-size: 20px;
-}
-
-.tituloAtacantesO > ul{
-    display: none;
-    position: absolute;
-}
-
-.tituloAtacantesO:hover ul{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-}
-
 .listaAtacantesO{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-}
-
-.tituloDefensoresO{
-    font-size: 20px;
-}
-
-.tituloDefensoresO > ul{
-    display: none;
-    position: absolute;
-}
-
-.tituloDefensoresO:hover ul{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -257,6 +227,7 @@ nav{
 
     .lA{
         padding: 5px;
+        cursor: pointer;
     }
 
     .lA > ul{
@@ -277,7 +248,6 @@ nav{
         padding: 3px;
         list-style: none;
     }
-    
 
     .flexListA{
         padding: 3px;
@@ -286,6 +256,7 @@ nav{
 
     .lD{
         padding: 5px;
+        cursor: pointer;
     }
 
     .lD > ul{
@@ -337,8 +308,81 @@ nav{
 }
 
 .pie {
-    border: 5px solid rgb(255, 255, 255);
-    color:white;
+    margin-top: 15px;
     flex-wrap: wrap;
     min-width: 250px;
+}
+
+.listaPie{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    width: 100%;
+}
+
+.liPie1, .liPie2{
+    width: 40%;
+}
+
+.liPie3{
+    width: 20%;
+}
+
+.servicioCliente {
+    width: 40%;
+}
+
+.titulo_sc {
+    font-size: 20px;
+    font-family:'Ghost Clan', sans-serif;
+    letter-spacing: 2px;
+    color:rgba(255, 0, 0, 0.5);
+}
+
+.soporte {
+    color:white;
+    text-decoration: none;
+    font-family: 'Navine Demo', sans-serif;
+}
+
+.soporte:hover{
+    color:rgba(255, 0, 0, 0.5);
+}
+
+.infoAdicional {
+    width: 40%;
+}
+
+.info_list a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Navine Demo', sans-serif;
+}
+
+.info_list a:hover{
+    color:rgba(255, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.listCliente{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.titulo_ia {
+    font-size: 20px;
+    font-family:'Ghost Clan', sans-serif;
+    letter-spacing: 2px;
+    color:rgba(255, 0, 0, 0.5);
+}
+
+.pegi18 {
+    position: relative;
+    top:40%;
+    width: 20%;
+    text-align: center;
+}
+
+.logo_18 {
+    width: 60px;
 }
