@@ -170,19 +170,34 @@ nav{
 }
 
 .titulo_sc {
-    font-size: 15px;
-}
-
-.Preg {
-    display: inline;
+    font-size: 20px;
+    font-family:'Ghost Clan', sans-serif;
+    letter-spacing: 2px;
 }
 
 .soporte {
-    display: inline;
+    color:white;
+    text-decoration: none;
+    font-family: 'Navine Demo', sans-serif;
+}
+
+.soporte:hover{
+    color:rgba(0, 255, 230, .5);
 }
 
 .infoAdicional {
     width: 40%;
+}
+
+.info_list a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Navine Demo', sans-serif;
+}
+
+.info_list a:hover{
+    color:rgba(0, 255, 230, .5);
+    text-decoration: none;
 }
 
 .listCliente{
@@ -191,10 +206,14 @@ nav{
 }
 
 .titulo_ia {
-    font-size: 15px;
+    font-size: 20px;
+    font-family:'Ghost Clan', sans-serif;
+    letter-spacing: 2px;
 }
 
 .pegi18 {
+    position: relative;
+    top:40%;
     width: 20%;
     text-align: center;
 }
