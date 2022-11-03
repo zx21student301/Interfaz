@@ -1,0 +1,41 @@
+.tabla{
+    text-align: center;
+    border-collapse: collapse;
+    font-family: Arial;
+}
+
+th{
+    padding: 4px;
+}
+
+.top-row{
+    background-color: #333;
+}
+
+.euro{
+    background: #E6F3FF url("../img/euro.png") left center no-repeat;
+    padding-left: 20px ;
+    padding-right: 10px;
+}
+
+.dolar{
+    background: #E6F3FF url("../img/dolar.png") left center no-repeat;
+    padding-left: 20px ;
+    padding-right: 10px;
+}
+
+.libra{
+    background: #E6F3FF url("../img/libra.png") left center no-repeat;
+    padding-left: 20px ;
+    padding-right: 10px;
+}
+
+.yen{
+    background: #E6F3FF url("../img/yen.png") left center no-repeat;
+    padding-left: 20px ;
+    padding-right: 10px;
+}
+
+.ed, .ld{
+    background-color: #FFFFCC;
+}
