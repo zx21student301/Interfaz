@@ -1,0 +1,74 @@
+.cajas{
+    display: flex;
+    flex-flow: row;
+}
+
+.caja1{
+    width: 200px;
+    height: 200px;
+    background-color:red;
+    font-size: 10px;
+}
+
+.caja1:hover{
+    animation: cont1 3s 0.5 ease-out;
+}
+
+@keyframes cont1{
+    100%{background-color:yellow;
+         font-size: 30px;}
+}
+
+.caja2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.caja2:hover{
+    animation: cont2 3s 0.2s ease-in-out;
+}
+
+@keyframes cont2 {
+    0%{color:white;
+         border: 2.5px skyblue dashed;
+    }
+    25%{color:white;
+        border: 5px skyblue dashed;
+    }
+    50%{color:white;
+    border: 7.5px skyblue dashed;
+    }
+    100%{color:white;
+        border: 10px skyblue dashed;
+    }    
+}
+
+.caja3{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.caja3:hover{
+    animation: cont3 5s 1 linear;
+}
+
+@keyframes cont3 {
+    0%{opacity:75%;
+        translate: 25px 25px;
+        rotate: 10deg;
+    }
+    25%{opacity:50%;
+        translate: 50px 50px;
+        rotate: 20deg;
+    }
+    50%{opacity:25%;
+        translate: 75px 75px;
+        rotate: 30deg;
+    }
+    100%{opacity:0%;
+        translate: 100px 100px;
+        rotate: 40deg;
+    }
+}
