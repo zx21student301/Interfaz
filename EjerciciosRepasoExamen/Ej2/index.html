@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de repaso 2</title>
+    <link rel="stylesheet" href="css/ej2Mod1.css">
+    <!--<link rel="stylesheet" href="css/ej2Mod2.css">-->
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>Heladería</h1>
+            <p>Añade un producto:</p>
+            <label>Categoría:</label>
+            <select class="selectCateg">
+                <option selected>Seleccione categoria</option>
+            </select>
+            <label>Sabor:</label>
+            <input type="text" class="inputSabor" placeholder="Elige un sabor...">
+            <label>Tamaño</label>
+            <div class="botonesRadioTam">
+                <input type="radio" id="grande" class="btnRadio" name="btnRadio" value="grande">
+                <label for="grande">Grande</label>
+                <input type="radio" id="mediano" class="btnRadio" name="btnRadio" value="mediano">
+                <label for="mediano">Mediano</label>
+                <input type="radio" id="pequeño" class="btnRadio" name="btnRadio" value="pequeño">
+                <label for="pequeño">Pequeño</label>
+            </div>
+            <p>Selecciona un complemento:</p>
+            <div class="botonesRadioComp">
+                <input type="radio" id="grande" class="btnRadio" name="btnRadio" value="grande">
+                <label for="grande">Chispas de chocolate</label>
+                <input type="radio" id="mediano" class="btnRadio" name="btnRadio" value="mediano">
+                <label for="mediano">Sirope</label>
+                <input type="radio" id="pequeño" class="btnRadio" name="btnRadio" value="pequeño">
+                <label for="pequeño">Lacasitos</label>
+            </div>
+            <button type="submit" class="btnEnviar">Enviar</button>
+            <button type="reset" class="btnBorrar">Borrar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
