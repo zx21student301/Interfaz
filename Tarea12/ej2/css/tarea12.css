@@ -1,0 +1,45 @@
+.cajas{
+    display: flex;
+    flex-flow: row;
+}
+
+.caja1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: c1 4s  linear infinite;
+}
+
+@keyframes c1 {
+    25%{background-color: orangered;;
+        translate:200px 0px }
+    50%{background-color:orange;
+        translate:200px 200px}
+    75%{background-color: yellow;
+        translate: 0px 200px;}
+    100%{background-color: red;
+        translate: 0px 0px;}
+}
+
+.caja2{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation: c2 10s  linear infinite;
+}
+
+@keyframes c2 {
+    0%{translate: -200px 0px;
+        background-color: lime;}
+    20%{translate: -200px 200px;
+        background-color: limegreen;}
+    40%{translate: -100px 300px;
+    background-color: lightgreen;}
+    60%{translate: 0px 200px;
+        background-color: yellowgreen;}
+    80%{translate: 0px 0px;
+        background-color: yellow;}
+    100%{translate: -200px 0px;
+        background-color: green;}
+}
+
