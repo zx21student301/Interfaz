@@ -1,0 +1,29 @@
+body{
+    background: url(../img/fondo.jpg) no-repeat;
+    width: 500px;
+    height: 500px;
+}
+
+.pacman{
+    background: url(../img/Pacman.png) no-repeat center;
+    background-size: 100% 100%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 400px;
+    top: 120px;
+    animation: mov 15s linear infinite;
+}
+
+@keyframes mov {
+    10%{translate: 55px;}
+    20%{translate: 55px 45px;}
+    30%{translate: -5px 45px;}
+    40%{translate: -5px 230px;}
+    50%{translate: -85px 230px;}
+    60%{translate: -85px 270px;}
+    70%{translate: -130px 270px;}
+    80%{translate: -130px 230px;}
+    90%{translate: -270px 230px;}
+    100%{translate: -270px 270px;}
+}
