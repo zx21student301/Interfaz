@@ -1,0 +1,105 @@
+/*Características comunes*/
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label{
+    padding: 5px;
+}
+
+.botonesRadioTam > label{
+    padding: 0;
+}
+
+.botonesCheckComp > label{
+    padding: 0;
+}
+
+.selectCateg{
+    width: 300px;
+    display: block;
+}
+
+.inputSabor{
+    width: 300px;
+    display: block;
+}
+
+.btnEnviar{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btnBorrar{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*Formulario 1*/ 
+.left{
+    position: relative;
+    float: left;
+    width: 40%;
+    margin: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form1{
+    background-color: aqua;
+    padding: 20px;
+}
+
+#enviar1{
+    background-color: #FF00D1;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+}
+
+#borrar1{
+    background-color: orange;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*Formulario 2*/ 
+
+.right{
+    position: relative;
+    float: right;
+    width: 40%;
+    margin: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form2{
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+#sabor2:focus{
+    border: 4px solid red;
+    background-color: yellow;
+}
+
+#enviar2{
+    background-color: orange;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#borrar2{
+    background-color: #FF00D1;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+}
