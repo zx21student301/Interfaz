@@ -34,7 +34,7 @@
     20%{translate: -200px 200px;
         background-color: limegreen;}
     40%{translate: -100px 300px;
-    background-color: lightgreen;}
+        background-color: lightgreen;}
     60%{translate: 0px 200px;
         background-color: yellowgreen;}
     80%{translate: 0px 0px;
