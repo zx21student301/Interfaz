@@ -3,7 +3,7 @@ onload = principal
 let hardBreacher = ["Thermite", "Hibana", "Ace", "Maverick"];
 let imgHB = ["","","","https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48…2f9a54238f569797a3e185a6/r6-operator-maverick.png"];
 let iconHb = ["https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6tow5mqLao5TrJVL52csSc/46aa934c9f3f02189e9c04df0114a081/Y0R6_BADGE_Thermite_L.png","https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1TSA4pMR58vgfrEai69REl/f82b1eba6694b4aa77259d3d0fe8cc08/Y1S4_BADGE_Hibana_L.png",
-"https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/dgG7GmXY1HgfeEE2gI1H9/06bd3917c8fc19f61654490019ef25fb/Y5S2_BADGE_Ace_L.png","https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3DXiYgVT71qGscYmFMgayj/d6c40a7dabdfecb92b637bec83003a58/Y3S3_BADGE_Maverick_L.png"];
+"https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/dgG7GmXY1HgfeEE2gI1H9/06bd3917c8fc19f61654490019ef25fb/Y5S2_BADGE_Ace_L.png",""];
 let descHb = [];
 
 let entry = ["Ash", "Zofia", "Jackal", "Sledge", "Buck", "Nokk", "Dokkaebi", "Lion", "Finka", "Amaru", "Ying", "IQ", "Blitz", "Iana"];
@@ -62,7 +62,7 @@ function principal() {
     let listaHb = document.getElementsByClassName("hbList");
 
     for (let index = 0; index < listaHb.length; index++) {
-        listaHb[index].style.cssText = "background-image: url("+iconHb[index]+");background-repeat: no-repeat;background-position: 0 .4em;padding-left: .6em;"
+        listaHb[index].style.cssText = "list-style: url(\""+iconHb[index]+"\") inside;"
         listaHb[index].setAttribute("onclick","cambiarDiv()");  
     }
 }
