@@ -1,11 +1,6 @@
-.lista{
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-}
-
 .fruta{
-    display: inline;
+    list-style: none;
+    display: inline-block;
     margin: 30px;
     border: 1px blue solid;
     border-radius: 5px;
@@ -16,16 +11,20 @@
     text-align: center;
 }
 
-.fruta > img{
+img{
     width: 100px;
     height: 100px;
+}
+
+.fruta img{
     display: none;
 }
 
 .fruta:hover{
     background-color: green;
+
 }
 
-.fruta:hover > img{
-    display:block;
+.fruta:hover img{
+    display: block;
 }
