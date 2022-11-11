@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="pedidos" >
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pedido" maxOccurs="unbounded" >
+          <xs:complexType>
+          <xs:sequence>
+            <xs:choice>
+              <xs:element name="cliente" >
+                <xs:complexType>
+                <xs:sequence>
+                <xs:element name="MOTE" type="xs:string" />
+                </xs:sequence>
+                  <xs:attribute name="NIF" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="empresa" >
+                <xs:complexType>
+                  <xs:attribute name="CIF" use="required" >
+                    <xs:simpleType>
+                      <xs:restriction base="xs:int">
+                        <xs:minInclusive value="0000"/>
+                        <xs:maxInclusive value="9999"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+              </xs:choice>
+              <xs:element name="producto" type="xs:string" maxOccurs="unbounded" />
+              <xs:element name="fecha" type="xs:string" />
+              <xs:element name="factura" minOccurs="0" >
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="emisor" type="xs:string" maxOccurs="unbounded" />
+                    <xs:element name="total" type="xs:int" maxOccurs="unbounded" />
+                    <xs:element name="fechaFactura" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="numFactura" type="xs:string" use="required" />
+                  <xs:attribute name="cliente_factura" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

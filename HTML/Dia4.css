@@ -1,0 +1,71 @@
+a.enlace1{
+  color:green;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: none;
+}
+a.enlace2{
+  font-size: 25px;
+  color:purple;
+  border-bottom: red 4px solid;
+  text-decoration: overline;
+}
+a.enlaceimagen{
+  color: orange;
+  font-size: 80px;
+  text-decoration: none;
+  border: 1px black dotted;
+  background: grey url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAe1BMVEX///8AAADh4eEeHh77+/vm5uYMDAxcXFxTU1ONjY0GBgbx8fFnZ2f4+PgSEhI2NjYXFxfs7Ow+Pj5/f39GRka1tbW7u7vW1tYoKCjCwsJNTU15eXnIyMguLi5ycnKHh4ehoaFjY2OUlJSpqakqKira2tqZmZmjo6POzs5EBf71AAADJklEQVR4nO2aa5eiMAyGuQpSLnIXRERRx///C3d1Zm2KUNBp4ew5eT6OoXlJmyYtoygIgiAIgiAIgiDIFIiWF1maZlVuerM7N7Qsjrb+yvnLarMt14U5p3uSubqjMqz28W2uOJA0Wak9+FY1hwSjKp0+9w8J7kW6/3C9GXJ/59xKDsLFHnz9n7WwC2X6vwV893csiflQ7cf9q2opTcFtkn9VtSXNghZN86+qbnclGiNM8k+OHTeOHll1HNd20E0M58Q+GtYWl3pSyBp2/ftJo5Hv1yP5IWB/1Cs2djo/Yro2wX++Zd4xyZgwhw27PkoiWoBXwyc2B9I10I4wCM6XaAGVDx9I+ySuYYUI4LQKEGC40D7rtzkBBU4jVsAFDOG3A0beDgyagEkSIOAKzOvBtA0TarW5iRRAwMh7zk5bgJUSixRwoVuNc+XYeUc6akTn4PcCUppiZ26pKVZ9o5qBziUYLV9rqtblGoa0Xq+K518NU+NijhUDz6bD9m0BAJAIJ77lOxD6XvpI1wcmix+rtzDPz1H3I4WroovAnlZlpwBWcfRSBFhymi+lHAEjXS9I2FJcg7x4BEzaCyyzBhbPArgP9JfiJzHdB9biBCgHdeJ79e+EvwcEllcMmcZpbLLeAqxtptXpAhunsXx5C9gPBJw8gJ3jTqB/RTnRgdV4uCMqqZVfDVl9BJgDdTNUEI0D6MyFzgDb6qjb/pczGtgV8xqnT2DOBee+zcC7QhN+snwAEwJVv74E2NzBc0n3eCqAnGksHZu9ESMpe3eSiF0BD06d07GVaj8aSN5EnYu7WsJdFbFZH6qjJ3HTttc62rzcXK3WEhRcJtxQyVVQbccdy1VQLK9g4j2ZPAV5Mu5YroKw9nk+2R+lKDCyaPi23CrYXJWiQCFN0P+9oMw8xZxDgRK25csXk+2xePiaR4HiXb6sQPedn29GkZs+j9gzKbhfkGq3rG2atshNpvTMpmAQVIAKUAEqQAWoABWggv9AgbhL3I8UODIO728ocFwJtxdvKFjGP1WwlP9/Cpbz/61gSf93Bcv6VxTtJPXfrBAEQRAEQRBEIH8A5f4uiV0/Ti4AAAAASUVORK5CYII=) no-repeat;
+  padding-left:100px;
+}
+table{
+  font-size: 50px;
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+td{
+  border: 2px black solid;
+  width: 200px;
+}
+#tr1{
+  background-color: red;
+
+}
+#tr2{
+  background-color: blue;
+}
+ul{
+  font-size: 30px;
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+li{
+  border: 1px red dashed;
+  width: 95px;
+  background-color: lightgrey;
+  padding: 10px;
+  display: inline;
+}
+/*cosa_que_se_quiere_cambiar:hover (se usa para cambiar el color del fondo o de la letra al pasar el raton por encima)*/
+li:hover{
+  background: yellow;
+}
+/*padding para no tener el cuadro tan cerca del texto*/
+input{
+  padding:5px;
+  display: block;
+  margin: 5px;
+}
+label{
+  display: block;
+  margin: 5px;
+}
+/*cosa_que_se_quier_resaltar:focus ( se usa para resaltar el cuadro en el que está cuando se clicka encima)*/
+input:focus{
+  border: 5px dotted red;
+
+}

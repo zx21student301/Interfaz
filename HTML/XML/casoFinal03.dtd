@@ -1,0 +1,18 @@
+   <!ELEMENT pedidos (pedido+)>
+   <!ELEMENT pedido ((empresa|cliente),producto+,fecha,factura?)>
+   <!ELEMENT empresa EMPTY>
+   <!ATTLIST empresa CIF CDATA #REQUIRED>
+   <!ELEMENT cliente (MOTE)>
+   <!ELEMENT MOTE (#PCDATA)>
+   <!ATTLIST cliente 
+          NIF ID #REQUIRED
+          MOTE NMTOKENS #IMPLIED>
+   <!ELEMENT producto (#PCDATA)>
+   <!ELEMENT fecha (#PCDATA)>
+   <!ELEMENT factura (emisor,total+,fechaFactura)>
+   <!ATTLIST factura 
+          numFactura ID #REQUIRED
+          cliente_factura CDATA #IMPLIED>
+   <!ELEMENT emisor (#PCDATA)>
+   <!ELEMENT fechaFactura (#PCDATA)>
+   <!ELEMENT total (#PCDATA)>

@@ -1,0 +1,94 @@
+*{
+  color:orange;
+  font´family:Arial;
+  font-size:72px;
+  background-color: yellow;
+}
+div.cabecera{
+  /*
+  border-top-width: 10px;
+  border-right-width: 5px;
+  border-bottom-width: 2px;
+  border-left-width: 1px;
+  */
+  border-width: 10px 5px;
+  /*
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+  */
+  border-style: dotted solid dashed;
+  /*
+  border-top-color:black;
+  border-right-color:red;
+  border-bottom-color:blue;
+  border-left-color:red;
+  */
+  border-color:black red blue;
+  /*
+   1 solo valor: los 4 bordes
+   2 valores: 1 para arriba abajo y 2 para derecha izquierda
+   3 valores: 1 arriba, 2 derecha izquierda, 3 abajo
+   4 valores: 1 arriba, 2 derecha, 3 abajo, 4 izquierda
+   */
+   margin-top: 10px;
+   margin-bottom:20px;
+   margin-right: 5px;
+   margin-left: 12px;
+   /*
+   relleno--padding
+   */
+   padding-top: 15px;
+   padding-right: 10px;
+   padding-bottom: 25px;
+   padding-left: 18px;
+   /*color de fondo*/
+   background-color: purple;
+}
+div.cuerpo{
+  width: 50%;
+  border-top: 5px black solid;
+  border-right: 10px dashed purple;
+  border-bottom: 7px dotted red;
+  border-left: 9px dashed skyblue;
+  /*
+  Aquí pones todas las propiedades que quieras a cada borde por separado,
+  da igual el orden y da igual si a una de ellas le falta una propiedad que tengan las demás
+  */
+  /*márgenes*/
+  margin: 10px 25px;
+  /*relleno*/
+  padding: 25px 20px;
+  /*fondo*/
+  background-color: blue;
+  background-image: url(https://img.freepik.com/vector-gratis/gotitas-agua-sobre-fondo-azul_107791-2583.jpg?size=626&ext=jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div.pie{
+  border: 6px double green;
+  /*
+  Se usa para poner todos los bordes iguales directamente
+  */
+  /*márgenes*/
+  margin: 50px;
+  /*relleno*/
+  padding:40px;
+  /*color de fondo*/
+  background: pink url(https://i.pinimg.com/originals/2c/ea/d4/2cead4a104fe1861928351a62c0fddad.jpg) no-repeat right;
+}
+/*
+las celdas de las tablas también pueden usarse como cajas a la hora de modelar con CSS
+*/
+#c1{
+  width: 40%;
+  background-color: red;
+}
+#c2{
+  background-color: black;
+  width: 60%;
+}
+#c3{
+  background-color: grey;
+}

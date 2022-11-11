@@ -1,0 +1,62 @@
+/* Eric Knuchel*/
+body{
+  font-family: sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+div.cabecera{
+  margin: 100px 750px;
+}
+table.tabla1{
+  width: 90%;
+  border-collapse: collapse;
+}
+td.espana, td.francia, td.italia{
+  display: inline;
+  color: #020E67;
+  border: 2px solid #020E67;
+  padding: 10px;
+  padding-left:70px;
+}
+.espana{
+  background: #97A2F7 url(espana.ico) no-repeat;
+}
+.francia{
+  background: #97A2F7 url(francia.ico) no-repeat;
+}
+.italia{
+  background: #97A2F7 url(italia.ico) no-repeat;
+}
+div.cuerpo{
+  margin-left: 500px;
+  margin-right: 300px;
+}
+table.tabla2{
+  width: 80%;
+  border-collapse: collapse;
+}
+td.tabla2, td.tabla2_ti,td.tabla2_img{
+  padding: 10px;
+  border: #020E67 solid 2px;
+  background: #97A2F7 ;
+  color: white;
+}
+td.tabla2_img{
+  padding-left: 1px;
+  padding-right: 1px;
+}
+td.tabla2_ti{
+  font-weight: bold;
+  padding: 15px;
+}
+td.tabla2{
+  padding: 50px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.ryanair{
+  width: 700px;
+}
+span{
+  display: block;
+}

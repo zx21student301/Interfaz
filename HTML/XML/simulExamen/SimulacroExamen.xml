@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<empleado xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SimulacroExamen.xsd">
+  <persona genero="hombre">
+    <nombre> Juan Jiménez </nombre>
+    <nacimiento>
+      <dia> 09 </dia>
+      <mes>febrero</mes>
+      <año> 1992 </año>
+    </nacimiento>
+    <direccion CP="28001">
+      <calle> c/ Amatista </calle>
+      <provincia> Madrid </provincia>
+    </direccion>
+  </persona>
+  <persona genero="mujer">
+  <nombre> María Fernández </nombre>
+    <nacimiento>
+      <dia> 01 </dia>
+      <mes>junio</mes>
+      <año> 1975 </año>
+    </nacimiento>
+    <direccion CP="28731">
+      <calle> c/ Acacia </calle>
+      <provincia> Madrid </provincia>
+    </direccion>
+  </persona>
+  <persona genero="nobinario">
+    <nombre> Logan Rio </nombre>
+    <direccion CP="28003">
+      <calle> c/ Huerta </calle>
+      <provincia> Madrid </provincia>
+    </direccion>
+    <direccion CP="45006">
+      <calle> c/ Asturias </calle>
+      <provincia> Toledo </provincia>
+    </direccion>
+  </persona>
+</empleado>

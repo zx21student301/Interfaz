@@ -1,0 +1,67 @@
+/* Eric Knuchel */
+body{
+  font-family: sans-serif;
+  font-size: 24px;
+}
+table{
+  width: 70%;
+}
+td{
+  padding: 30px;
+}
+td.form1{
+  width: 30%;
+}
+td.form2{
+  width: 40%;
+}
+legend{
+  color: #1F6F00;
+  font-weight: bold;
+}
+label{
+  color: #1F6F00;
+  font-weight: bold;
+  display:block;
+  }
+fieldset.viaje{
+  background: #FEE5B3;
+}
+fieldset.pasajero{
+  background: #FDFEB3;
+}
+input{
+  margin-bottom: 15px;
+}
+select{
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding: 5px;
+}
+label.nombre, label.viajepor{
+  margin-top: 20px;
+}
+input.apellidos{
+  padding: 10px;
+  font-size: 15px;
+}
+input.nombre{
+  padding: 10px;
+  font-size: 15px;
+}
+input.apellidos:focus{
+  border: 5px solid orange;
+}
+input.nombre:focus{
+  border: 5px solid orange;
+}
+textarea:focus{
+  border: 5px solid orange;
+}
+input.enviar, input.borrar{
+  color:#1F6F00;
+  border: 5px dashed #1F6F00;
+  background: #B1FE93;
+  font-size: 20px;
+  padding: 10px;
+}

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arboles[
+  <!ELEMENT arboles (arbol+)>
+  <!ELEMENT arbol (nombreComun,vegetacion,altura,formaEstructura,colorPrimavera,colorOtoño?,resistenciaHeladas)>
+  <!ELEMENT resistenciaHeladas (fuertes|medias)>
+  <!ELEMENT nombreComun (#PCDATA)>
+  <!ELEMENT vegetacion EMPTY>
+  <!ELEMENT altura EMPTY>
+  <!ELEMENT formaEstructura (#PCDATA)>
+  <!ELEMENT colorPrimavera (#PCDATA)>
+  <!ELEMENT colorOtoño (#PCDATA)>
+  <!ELEMENT fuertes EMPTY>
+  <!ELEMENT medias EMPTY>
+  <!ATTLIST arbol nombreTecnico CDATA #REQUIRED>
+  <!ATTLIST vegetacion tipo (Caducifolio|Perenne) #REQUIRED>
+  <!ATTLIST altura
+                  alturaMax CDATA #IMPLIED
+                  alturaMed CDATA #IMPLIED
+                  alturaMin CDATA #IMPLIED
+  >
+  <!ATTLIST fuertes grados CDATA #IMPLIED>
+  <!ATTLIST medias grados CDATA #IMPLIED>
+]>
+<arboles>
+  <arbol nombreTecnico = "Arce monspessulanum">
+    <nombreComun> Arce de Montpellier, Arce menor </nombreComun>
+    <vegetacion tipo ="Caducifolio"/>
+    <altura alturaMin ="6m" alturaMax = "10m"/>
+    <formaEstructura> Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante</formaEstructura>
+    <colorPrimavera> Haz verde brillante, envés verde blanquecino</colorPrimavera>
+    <resistenciaHeladas>
+      <fuertes grados="-15ºC"/>
+    </resistenciaHeladas>
+  </arbol>
+  <arbol nombreTecnico = "Olea europea">
+    <nombreComun> Olivo</nombreComun>
+    <vegetacion tipo ="Perenne"/>
+    <altura alturaMin ="8m" alturaMax = "15m"/>
+    <formaEstructura> Copa irregular. Tronco principal irregular con bifurcaciones. Ramaje tortuoso</formaEstructura>
+    <colorPrimavera> Haz verde oscuro, envés verde plateado</colorPrimavera>
+    <resistenciaHeladas>
+      <medias grados ="10º"/>
+    </resistenciaHeladas>
+  </arbol>
+  <arbol nombreTecnico = "Platanus orientalis">
+    <nombreComun> Plátano</nombreComun>
+    <vegetacion tipo ="Caducifolio"/>
+    <altura alturaMin ="20m" alturaMax = "25m"/>
+    <formaEstructura> Copa ovoidal. Tronco principal recto. Ramaje expandido</formaEstructura>
+    <colorPrimavera> Haz verde medio, envés verde claro</colorPrimavera>
+    <colorOtoño>Ocre</colorOtoño>
+    <resistenciaHeladas>
+       <fuertes grados="-20ºC"/>
+    </resistenciaHeladas>
+  </arbol>
+  <arbol nombreTecnico = "Quercus ilex">
+    <nombreComun> Encina</nombreComun>
+    <vegetacion tipo ="Perenne"/>
+    <altura alturaMin ="" alturaMed="25m" alturaMax = ""/>
+    <formaEstructura> Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso</formaEstructura>
+    <colorPrimavera> Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, envés plateado</colorPrimavera>
+    <resistenciaHeladas>
+       <fuertes grados="-15ºC"/>
+    </resistenciaHeladas>
+  </arbol>
+</arboles>

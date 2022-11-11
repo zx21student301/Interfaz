@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/zx21student301/Desktop/HTML/XSL/curriculum.xsl"?>
+  <curriculum>
+    <nombre>Eric Francisco Knuchel</nombre>
+    
+    <foto>C:\Users\zx21student301\Desktop\HTML\XSL\FotoCV.png</foto>
+    
+    <datosContacto>
+      <telefono>644 97 42 70</telefono>
+      <email>eric.francisco.knuchel@gmail.com</email>
+      <direccion>Seseña, España</direccion>
+      <linkedin></linkedin>
+    </datosContacto>
+    
+    <descripcion>Joven con ganas de trabajar, responsable y comprometido</descripcion>
+    
+    <formacionAcad>
+    
+      <modulo>Bachillerato de ciencias</modulo>
+      <fecha>septiembre 2019 - mayo 2021</fecha>
+      <institucion>IES Matías Bravo</institucion>
+      <lugar>Valdemoro, Madrid, España</lugar>
+    </formacionAcad>
+
+    <formacionAcad>
+      <modulo>Técnico superior en desarrollo de aplicaciones web</modulo>
+      <fecha>septiembre 2021</fecha>
+      <institucion>Colegio Valle del Miro</institucion>
+      <lugar>Valdemoro, Madrid, España</lugar>
+    </formacionAcad>
+    
+    <formacionProf>
+    
+      <modulo>Curso de socorrista en piscinas e instalaciones acuáticas de la Comunidad de Madrid</modulo>
+      <fecha>abril 2020</fecha>
+      <institucion>Centro deportivo Helicón</institucion>
+      <lugar>Valdemoro, Madrid, España</lugar>
+      
+    </formacionProf>
+    
+    <experienciaProf>
+      <fecha>2020</fecha>
+      <trabajo>Profesor particular</trabajo>
+      <descripcion>Clases particulares de física y química e inglés a alumnos de 3º y 4º de la ESO.</descripcion>
+    </experienciaProf>
+      
+    <experienciaProf>
+      <fecha>2021</fecha>
+      <trabajo>Socorrista piscina municipal</trabajo>
+      <descripcion>Socorrista en piscina municipal de Seseña</descripcion>
+    </experienciaProf>
+    
+    <extras>
+    
+      <ofimatica>
+        <datos>Microsoft Office a nivel usuario.</datos>
+        <datos>Desarrollo de páginas web a nivel básico.</datos>
+        <datos>Lenguaje de programación Python nivel básico.</datos>
+        <datos>Lenguaje de programación Java nivel básico.</datos>
+      </ofimatica>
+      
+      <idiomas>
+        <idioma nivel="Nativo">Español</idioma>
+        
+        <idioma nivel="B2">Inglés</idioma>
+        
+        <idioma nivel="A2">Francés</idioma>
+        
+      </idiomas>
+    </extras>
+    
+  </curriculum>

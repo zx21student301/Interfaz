@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Comentarios-->
+<pedido>
+  <destinatario direccion="Plaza de la Duquesa 12" ciudad="Albacete">Alicia Abad</destinatario>
+
+  <ordenante direccion="General  Ricardos 56" ciudad="Madrid">Roberto Movilla </ordenante>
+
+  <contenido observaciones="son urgentes">
+    <producto cantidad="1" observaciones="Que sea eléctrica">
+      <tipo>Cortadora de césped</tipo>
+    </producto>
+    <producto cantidad="3">
+      <tipo>Podadora de setos</tipo>
+    </producto>
+  </contenido>
+</pedido>

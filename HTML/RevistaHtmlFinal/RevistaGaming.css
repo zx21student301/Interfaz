@@ -1,0 +1,49 @@
+*{
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  font-size: 15px;
+}
+.titulo{
+ font-size: 40px;
+ font-family: Courier New;
+ font-weight: bold;
+}
+div.menu{
+  border-width: 20px 10px;
+  border-color: blue;
+  border-style: dotted;
+  background-color: skyblue;
+}
+.inicio{
+  font-size: 20px;
+}
+.gaminghouse{
+  font-style: italic;
+}
+.tabla_inicio_li{
+  font-size: 17px;
+  font-family: Times New Roman;
+  text-decoration: none;
+}
+.tabla_noticias{
+  background-color: red;
+}
+.noticias_titulo{
+  font-size: 25px;
+  font-family: Verdana;
+  color:red;
+  font-weight: bold;
+  font-weigth: underline;
+}
+.noticias{
+  background-color: white;
+  width:70%;
+  margin:20px 200px;
+}
+.rs{
+  width: 150px;
+}
+.CoD{
+  position: center;
+}

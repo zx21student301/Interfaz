@@ -1,0 +1,53 @@
+<!--Eric Knuchel-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Ejercicio2_Eric_Knuchel.css">
+  </head>
+  <body>
+    <table class="tabla">
+      <tr>
+        <td class="form1">
+          <form class="pasajero" action="index.html" method="post">
+            <fieldset class="pasajero">
+              <legend class="datos_p">Datos del pasajero</legend>
+              <label class="nombre" for="">Nombre:</label>
+              <input class="nombre" type="text" name="" value="" placeholder="Introduce aquí tu nombre" required>
+              <label class="apellidos" for="">Apellidos:</label>
+              <input class="apellidos" type="text" name="" value="" required placeholder="Introduce aquí tus apellidos">
+              <label class="alergias" for="">Alergias que debamos conocer:</label>
+              <textarea class="alergias" name="name" rows="4" cols="80"></textarea>
+            </fieldset>
+          </form>
+        </td>
+        <td class="form2">
+          <form class="viaje" action="index.html" method="post">
+            <fieldset class="viaje">
+              <legend class="datos_v">Datos del viaje</legend>
+              <label class="viajepor" for="">Viaja por:</label>
+              <input  type="radio" name="trab" value="">Trabajo
+              <input type="radio" name="ocio" value="">Ocio
+              <input type="radio" name="otros" value="">Otros motivos
+              <label class="origen" for="">Origen:</label>
+              <select class="origen" name="">
+                <option value="">España</option>
+                <option value="">Francia</option>
+                <option value="">Italia</option>
+              </select>
+              <label class="destino" for="">Destino:</label>
+              <select class="destino" name="">
+                <option value="">España</option>
+                <option value="">Francia</option>
+                <option value="">Italia</option>
+              </select>
+            </fieldset>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <input class="borrar" type="submit" name="enviar" value="Enviar formulario">
+    <input class="enviar" type="reset" name="reset" value="Borrar datos">
+  </body>
+</html>

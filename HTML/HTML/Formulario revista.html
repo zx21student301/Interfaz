@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gaming House</title>
+  </head>
+  <body bgcolor="black">
+    <fieldset>
+      <font color="White" size="10" face="Comic Sans MSS">
+        <legend align="center" id="principio"><b><u>Formulario revista Gaming</u></b></legend>
+      </font>
+    <form class="" action="index.html" method="post" enctype="multipart/form-data">
+      <font color="red" size="5">
+        <fieldset>
+          <legend><b><u>Datos personales</u></b></legend>
+            <p>Nombre: <input type="text" name="nombre" placeholder="Escribe tu nombre" required></p>
+            <p>Apellidos: <input type="text" name="apellidos" placeholder="Escribe tus apellidos" required></p>
+            <p>Nº de teléfono: <input type="text" name="telf" placeholder="Escribe tu nº de teléfono"></p>
+            <p>Fecha de nacimiento: <input type="date" name="fecha" required></p>
+        <fieldset>
+          <legend>Dirección</legend>
+            <p>Provincia</p>
+            <select class="" name="seleccion_comunidades">
+              <option value="">A coruña</option>
+              <option value="">Álava</option>
+              <option value="">Albacete</option>
+              <option value="">Alicante</option>
+              <option value="">Almería</option>
+              <option value="">Asturias</option>
+              <option value="">Ávila</option>
+              <option value="">Badajoz</option>
+              <option value="">Baleares</option>
+              <option value="">Barcelona</option>
+              <option value="">Burgos</option>
+              <option value="">Cáceres</option>
+              <option value="">Cádiz</option>
+              <option value="">Cantabria</option>
+              <option value="">Castellón</option>
+              <option value="">Ciudad Real</option>
+              <option value="">Córdoba</option>
+              <option value="">Cuenca</option>
+              <option value="">Girona</option>
+              <option value="">Granada</option>
+              <option value="">Guadalajara</option>
+              <option value="">Gipuzkoa</option>
+              <option value="">Huelva</option>
+              <option value="">Huesca</option>
+              <option value="">Jaén</option>
+              <option value="">La Rioja</option>
+              <option value="">Las Palmas</option>
+              <option value="">León</option>
+              <option value="">Lérida</option>
+              <option value="">Lugo</option>
+              <option value="">Madrid</option>
+              <option value="">Málaga</option>
+              <option value="">Murcia</option>
+              <option value="">Navarra</option>
+              <option value="">Ourense</option>
+              <option value="">Palencia</option>
+              <option value="">Pontevedra</option>
+              <option value="">Salamanca</option>
+              <option value="">Segovia</option>
+              <option value="">Sevilla</option>
+              <option value="">Soria</option>
+              <option value="">Tarragona</option>
+              <option value="">Santa Cruz de Tenerife</option>
+              <option value="">Teruel</option>
+              <option value="">Toledo</option>
+              <option value="">Valencia</option>
+              <option value="">Valladolid</option>
+              <option value="">Vizcaya</option>
+              <option value="">Zamora</option>
+              <option value="">Zaragoza</option>
+            </select>
+            <p>Localidad: <input type="text" name="Localidad" placeholder="Escribe el nombre de la localidad"></p>
+            <p><select class="" name="seleccion_comunidades">
+              <option value="">Calle</option>
+              <option value="">Avenida</option>
+              <option value="">Ruta</option>
+              <input type="text" name="calle"></p>
+            <p>Código postal: <input type="text" name="cpostal" placeholder="Escribe el código postal"></p>
+          </fieldset>
+        </fieldset>
+      </font>
+      <fieldset>
+        <font color="skyblue" size="5">
+          <legend align="center"><b><u>Crea tu cuenta</u></b></legend>
+            <p>Email: <input type="text" name="email" placeholder="Escribe un email válido" required></p>
+            <p>Nombre de usuario/ID online: <input type="text" name="usuario" placeholder="Escribe un ID online" required></p>
+            <p>Contraseña: <input type="password" name="contraseña" required></p>
+            <p>Foto de perfil/Avatar:<input type="file" name="archivo" value="Adjuntar archivo"></p>
+        </font>
+      </fieldset>
+      <fieldset>
+        <font color="lime" size="5">
+          <legend align="center"><b><u>Test</u></b></legend>
+            <p>Ahora vamos a ver tus gustos con un test corto de 2 preguntas para así ofrecerte la mejor calidad.</p>
+            <p>¿Qué tipo de juegos te llaman la atención?</p>
+            <input type="checkbox" name="testA" value="">Acción/Lucha
+            <br>
+            <input type="checkbox" name="testC" value="">Coches
+            <br>
+            <input type="checkbox" name="testD" value="">Deportes
+            <br>
+            <input type="checkbox" name="testS" value="">Shooters
+            <br>
+            <input type="checkbox" name="testM" value="">Moba
+            <br>
+            <input type="checkbox" name="testR" value="">RPG
+            <p>¿Cúal es tu plataforma de juego actual?Elige solo 1 opción.</p>
+            <input type="radio" name="plat" value="">PC
+            <input type="radio" name="plat" value="">PlayStation
+            <input type="radio" name="plat" value="">Xbox
+            <input type="radio" name="plat" value="">Nintendo Switch
+        </font>
+      </fieldset>
+      <fieldset>
+        <font color="yellow" size="5">
+          <legend><b><u>Suscripción mensual</u></b></legend>
+          <p>¡Si te suscribes antes de que finalice el mes tendrás un 15% de descuento!</p>
+          <p>Forma de pago</p>
+          <input type="radio" name="pago" value="">Tarjeta de crédito/débito
+            <input type="text" name="nombre" placeholder="Nº de cuenta" required>
+          <br>
+          <input type="radio" name="pago" value="">PayPal
+          <br>
+          <input type="radio" name="pago" value="">Visa/MAsterCard
+        </font>
+      </fieldset>
+      <br>
+    <font color="red" size="5">
+    <input type="checkbox" name="Cond2" value="">Acepto recibir notificaciones al email.
+    <br>
+    <br>
+    <input type="checkbox" name="Cond1" value="">Acepto las condiciones de uso de la revista.
+    <br>
+    <br>
+    <a href="#principio">Volver al principio
+    </font>
+    <br>
+    <br>
+    <input type="reset" name="borrar" value="Borrar formulario">
+    <br>
+    <br>
+    <input type="submit" name="envio" value="Enviar formulario">
+    </form>
+    </fieldset>
+  </body>
+</html>

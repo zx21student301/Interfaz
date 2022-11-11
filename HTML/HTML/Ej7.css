@@ -1,0 +1,74 @@
+body{
+  font-size: 20px;
+  font-family: Arial;
+}
+div.cabecera{
+  width: 30%;
+  background: lightgrey;
+}
+a.a1{
+  text-decoration: none;
+  color: black;
+}
+a.a2{
+  text-decoration: none;
+  color: white;
+}
+ul.lista{
+  list-style-type: none;
+  font-size: 20px;
+  width: 90%;
+  padding: 15px;
+  margin-left: 10px;
+}
+li.l2{
+  display: block;
+}
+#corto{
+  background: #78C7EA;
+  padding: 10px;
+}
+#mid{
+  background: #23B0ED;
+  padding: 10px;
+}
+#Mancho, #MMancho{
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: white 1px solid;
+}
+div.cabecera_2{
+  width: 35%;
+  background: lightgrey;
+  padding: 5px;
+}
+ul.lista_{
+  list-style-type: none;
+  font-size: 20px;
+  padding: 20px;
+}
+li.l2{
+  display: inline;
+  width: 200px;
+}
+#corto_2{
+  background: #78C7EA;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#mid_2{
+  background: #23B0ED;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#Mancho_2, #MMancho_2{
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: white 1px solid;
+  margin-right: 10px;
+  margin-left: 10px;
+}

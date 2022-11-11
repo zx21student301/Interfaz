@@ -1,0 +1,10 @@
+form{
+  width: 30%;
+}
+label{
+  display: block;
+  margin-top: 15px;
+}
+.usuario{
+  margin-top: 1px;
+}

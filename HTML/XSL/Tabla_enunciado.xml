@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<listado>
+  <alumno>
+    <nombre>Julian Lopez</nombre>
+    <asignatura>Bases de datos</asignatura>
+    <nota>6</nota>
+   </alumno>
+  <alumno>
+    <nombre>Sergio Garcia</nombre>
+    <asignatura>Lenguaje de Marcas</asignatura>
+    <nota>8</nota>
+   </alumno>
+   <alumno>
+    <nombre>Ana Campos</nombre>
+    <asignatura>Programación</asignatura>
+    <nota>7</nota>
+   </alumno>
+ </listado>

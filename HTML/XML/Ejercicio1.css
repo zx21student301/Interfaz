@@ -1,0 +1,46 @@
+mensaje{
+  background: #A6A6A6;
+  font-family:Georgia;
+  color:#5A5A5A;
+  font-size: 24px;
+  padding: 10px;
+}
+ordenante{
+  border: black solid 5px;
+  background:  #F44949;
+  font-size: 16px;
+  display: block;
+  margin-right: 90%;
+  color:black;
+  margin-bottom: 5px;
+}
+nombre,apellidos,direccion,provincia{
+  display: block;
+}
+destinatario{
+  border: black solid 5px;
+  background: #08D72D;
+  font-size: 16px;
+  display: block;
+  margin-right: 90%;
+  color:black;
+  margin-bottom: 5px;
+}
+contenido{
+  border: black solid 5px;
+  background: #001766;
+  color: white;
+  display: block;
+  margin-right: 90%;
+  margin-bottom: 5px;
+}
+producto{
+  display: block;
+  border: white solid 2px;
+  margin: 5px;
+}
+observaciones{
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+}

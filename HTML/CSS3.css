@@ -1,0 +1,19 @@
+*{
+  font-family: Arial;
+}
+
+h1.t1{
+  font-family: Verdana;
+  fon-size:48px;
+  color:green;
+}
+
+h1.t2{
+  font: 48px italic Times New Roman;
+  color:pink;
+}
+
+p{
+  font-weight: bold;
+  font-style: italic;
+}

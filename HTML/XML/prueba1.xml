@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedido>
+<destinatario>
+  <direccion> Plaza de la Duquesa 12 </direccion>
+  <nombre> Alicia </nombre>
+  <apellido> Abad </apellido>
+  <ciudad> Albacete </ciudad>
+</destinatario>
+
+<ordenante>
+  <nombre> Roberto </nombre>
+  <apellido> Movilla </apellido>
+  <direccion> General  Ricardos 56</direccion>
+  <ciudad> Madrid </ciudad>
+</ordenante>
+
+<contenido>
+  <producto>
+    <tipo>Cortadora de césped</tipo>
+    <cantidad>1</cantidad>
+    <observaciones>Que sea eléctrica</observaciones>
+  </producto>
+  <producto>
+    <tipo>Podadora de setos</tipo>
+    <cantidad>3</cantidad>
+  </producto>
+</contenido>
+<observaciones>Es urgente</observaciones>

@@ -1,0 +1,101 @@
+body{
+  font-size: 25px;
+  font-family: Arial;
+}
+div.cabecera{
+  background: #D5F568;
+  text-align: center;
+  padding: 50px;
+}
+li.elementos{
+  border: 2px black solid;
+  display: inline;
+  padding: 10px;
+  background: lightgrey;
+}
+div.cuerpo{
+  text-align: center;
+}
+.tabla{
+  width: 100%;
+}
+.menu_vertical{
+  background: #85C063;
+  text-align: left;
+  width: 30%;
+}
+li.elementos_2{
+  display: block;
+  border: 2px black solid;
+  background: lightgrey url(https://lh3.googleusercontent.com/a70G7VwMfF7Pe5h7eEU8wn3vHAmAhs_Ubx07PWfpLVJuG3UuVeTgsMI_8GzUf4WKNRewmFc79cznFkw=w1920-h969) no-repeat;
+  background-position: left center;
+  width: 350px;
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+td.tabla2{
+  background: #A8EC82;
+  text-align: center;
+  padding: 10px;
+}
+table.tabla3{
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  caption-side: bottom;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+.titulo_tabla3{
+  font-style: italic;
+  font-weight: bold;
+}
+.tr_tabla3{
+  border: 1px solid black;
+}
+.celda_tabla3{
+  width: 300px;
+  background: yellow;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.celda_tabla3_1{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: red 2px solid;
+  background: yellow;
+}
+.formulario{
+  color: white;
+  background: #336816;
+  text-align: center;
+  padding: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+fieldset{
+  margin-left: 50px;
+  margin-right: 300px;
+}
+.titulo_formulario{
+  text-align: left;
+}
+label{
+  display: block;
+  text-align: left;
+}
+input{
+  display: block;
+  text-align: left;
+  font-size: 20px;
+}
+input:focus{
+  border: red 5px solid;
+  font-size: 25px;
+}
+select.paises{
+  display: list-item;
+  font-size: 20px;
+}

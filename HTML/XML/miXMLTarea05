@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alquiler
+  [<!ELEMENT alquiler (peliculas?)>
+    <!ELEMENT peliculas (pelicula+)>
+    <!ELEMENT pelicula ((actor*,actriz*)+)>
+    <!ELEMENT actor EMPTY>
+    <!ELEMENT actriz EMPTY>
+    <!ATTLIST alquiler codigo ID #REQUIRED
+                                    fecha CDATA #IMPLIED>
+    <!ATTLIST pelicula id_pelicula ID #REQUIRED
+                                    caratula NMTOKEN #IMPLIED
+                                    titulo CDATA #REQUIRED
+                                    genero (Comedia|Thriller|Drama|Accion) #REQUIRED
+                                    duracion CDATA "100min">
+    <!ATTLIST actor nombre NMTOKENS #REQUIRED
+                                apellido NMTOKENS #IMPLIED>
+    <!ATTLIST actriz nombre NMTOKENS #REQUIRED
+                                apellido NMTOKENS #IMPLIED>
+    ]>
+<alquiler codigo="A" fecha="21/01/2022">
+   <peliculas>
+     <pelicula id_pelicula="p01" titulo="Transformers" genero="Accion" duracion="143min">
+      <actriz nombre="Megan" apellido="Fox" />
+      <actor nombre="Shia" apellido="LaBeouf" />
+      <actor nombre="Josh" apellido="Duhamel" />
+      <actor nombre="Peter" apellido="Cullen" />
+      <actor nombre="Hugo" apellido="Weaving" />
+      </pelicula>
+      <pelicula id_pelicula="p02" titulo="Avatar" genero="Accion" duracion="162min">
+        <actriz nombre="Zoe" apellido="Saldaña" />
+        <actor nombre="Sam" apellido="Worthington" />
+        <actriz nombre="Michelle" apellido="Rodriguez" />
+        <actor nombre="Stephen" apellido="Lang" />
+        <actriz nombre="Sigourney" apellido="Weaver" />
+      </pelicula>
+   </peliculas>
+  </alquiler>

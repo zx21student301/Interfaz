@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="empleado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="persona" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="nacimiento" minOccurs="0">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="dia">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:minInclusive value="01"/>
+                          <xs:maxInclusive value="31"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="mes">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="enero"/>
+                          <xs:pattern value="febrero"/>
+                          <xs:pattern value="marzo"/>
+                          <xs:pattern value="abril"/>
+                          <xs:pattern value="mayo"/>
+                          <xs:pattern value="junio"/>
+                          <xs:pattern value="julio"/>
+                          <xs:pattern value="agosto"/>
+                          <xs:pattern value="septiembre"/>
+                          <xs:pattern value="octubre"/>
+                          <xs:pattern value="noviembre"/>
+                          <xs:pattern value="diciembre"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="año">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:minInclusive value="0"/>
+                          <xs:maxInclusive value="2022"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:all>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="direccion" maxOccurs="unbounded" >
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="calle" type="xs:string" />
+                    <xs:element name="provincia" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="CP" type="xs:int" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="genero" use="optional">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="hombre" />
+                  <xs:pattern value="mujer" />
+                  <xs:pattern value="nobinario" />
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

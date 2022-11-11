@@ -1,0 +1,26 @@
+div.calendario{
+  background: #F0ED3C;
+  padding: 20px;
+}
+table{
+  width: 60%;
+  margin: 50px 350px;
+  text-align: center;
+  border-collapse: collapse;
+}
+caption{
+  caption-side: top;
+  text-align: center;
+  text-decoration: overline;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+td{
+  border-bottom: 1px solid black;
+}
+.dia_sem{
+  font-weight: bold;
+  font-size: 15px;
+}

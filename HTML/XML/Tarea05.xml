@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alquiler
+  [<!ELEMENT alquiler (peliculas?)>
+    <!ELEMENT peliculas (pelicula+)>
+    <!ELEMENT pelicula ((actor*,actriz*)+)>
+    <!ELEMENT actor EMPTY>
+    <!ELEMENT actriz EMPTY>
+    <!ATTLIST alquiler codigo ID #REQUIRED
+                                    fecha CDATA #IMPLIED>
+    <!ATTLIST pelicula id_pelicula ID #REQUIRED
+                                    caratula NMTOKEN #IMPLIED
+                                    titulo CDATA #REQUIRED
+                                    genero (Comedia|Thriller|Drama|Accion) #REQUIRED
+                                    duracion CDATA "100min">
+    <!ATTLIST actor nombre NMTOKENS #REQUIRED
+                                apellido NMTOKENS #IMPLIED>
+    <!ATTLIST actriz nombre NMTOKENS #REQUIRED
+                                apellido NMTOKENS #IMPLIED>
+    ]>
+    <alquiler codigo="a1" fecha="18/01/2022">
+   <peliculas>
+     <pelicula id_pelicula="p320" caratula="foto_p0360" titulo="OLD SCHOOL" genero="Comedia" duracion="97min">
+        <actriz nombre="Ellen" apellido="Pompeo" />
+        <actor nombre="Luke" apellido="Wilson" />
+        <actor nombre="Will" apellido="Farrel" />
+        <actriz nombre="Elisa" apellido="Cuthbert" />
+        <actor nombre="Vince" apellido="Vaughnl" />
+      </pelicula>
+      <pelicula id_pelicula="p1001" titulo="Spiderman: Homecoming" genero="Accion" duracion="133min">
+        <actriz nombre="Zendaya" />
+        <actor nombre="Tom" apellido="Holland" />
+        <actor nombre="Robert" apellido="Downey Jr." />
+      </pelicula>
+   </peliculas>
+  </alquiler>

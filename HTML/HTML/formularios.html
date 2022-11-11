@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor="lime">
+    <font color="red" size="5" face="Comic Sans MS">
+      <form class="" action="index.html" method="post" enctype="multipart/form-data">
+        <!--Casillas rellenables dentro de un marco-->
+      <fieldset>
+        <legend>Datos personales</legend>
+        <p>Nombre: <input type="text" name="nombre" placeholder="¿Cómo te llamas bro?"></p>
+        <p>Contraseña: <input type="password" name="contraseña" required></p>
+        <p>Descripción:
+          <br>
+          <textarea name="descripcion" rows="8" cols="80" placeholder="Añade tu descripción man"></textarea></p>
+      </fieldset>
+        <!--Botones radio-->
+        <p>Introduce tu mes de nacimiento:</p>
+        <input type="radio" name="mes" value="" checked>Enero
+        <input type="radio" name="mes" value="">Febrero
+        <br>
+        <input type="radio" name="mes" value="">Marzo
+        <input type="radio" name="mes" value="">Abril
+        <br>
+        <input type="radio" name="mes" value="">Mayo
+        <input type="radio" name="mes" value="">Junio
+        <br>
+        <input type="radio" name="mes" value="">Julio
+        <input type="radio" name="mes" value="">Agosto
+        <br>
+        <input type="radio" name="mes" value="">Septiembre
+        <input type="radio" name="mes" value="">Octubre
+        <br>
+        <input type="radio" name="mes" value="">Noviembre
+        <input type="radio" name="mes" value="">Diciembre
+        <!--checked box-->
+        <p>Qué colores te gustan</p>
+        <input type="checkbox" name="check_amarillo" value="">Amarillo
+        <br>
+        <input type="checkbox" name="check_azul" value="">Azul
+        <br>
+        <input type="checkbox" name="check_rojo" value="">Rojo
+        <br>
+        <!--Caja de selección-->
+        <p>Comunidades Autónomas</p>
+        <select class="" name="seleccion_comunidades">
+          <option value="">Madrid</option>
+          <option value="">Cataluña</option>
+          <option value="">Andalucía</option>
+          <option value="">Extremadura</option>
+        </select>
+        <br>
+        <!--Adjuntar archivos-->
+        <input type="file" name="archivo" value="Adjuntar archivo">
+        <br>
+        <!--Borrar todo-->
+        <input type="reset" name="borrar" value="Borrar formulario">
+        <!--Volver a la página de atrás-->
+        <input type="button" name="volver" value="Volver atrás">
+        <br>
+        <!--Enviar el formulario-->
+        <input type="submit" name="envio" value="Enviar formulario">
+
+      </form>
+    </font>
+  </body>
+</html>
