@@ -1,0 +1,58 @@
+/*Eric Francisco Knuchel*/
+body{
+    background-color: #BEBEBE;
+}
+
+li{
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+    color:#5052F8;
+    background-color: #9394F5;
+    border:1px solid #5052F8;
+    width: 250px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 45px;
+}
+
+.fresa{
+    background-image: url(../img/fresa.ico);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.cereza{
+    background-image: url(../img/cereza.ico);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.platano{
+    background-image: url(../img/platano.ico);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.arand{
+    background-image: url(../img/arandano.ico);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+img{
+    margin-right: 15px;
+}
+
+li:hover{
+    padding: 10px;
+    color:white;
+    text-align: center;
+    width: 350px;
+    background-color: #5052F8;
+    transition-property: background color padding width text-align;
+    transition-delay: 0.2s;
+}
