@@ -1,15 +1,17 @@
 body {
     background: url("https://static-dm.akamaized.net/siege/prod/fe44dc601d5a0312a78258c19b2f9e5e.jpg") no-repeat;
     background-size: 100% 100%;
+    padding-top: 10px;
 }
 
 .cabecera {
-    height: 1.5em;
+    height: 3.5em;
     text-align: right;
     margin-bottom: 10px;
     padding: 5px;
     min-width: 250px;
     flex-wrap: wrap;
+    border-bottom: red 2px solid;
 }
 
 .fb {

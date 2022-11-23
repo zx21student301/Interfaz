@@ -1,15 +1,17 @@
 body {
-    background: url("https://static-dm.akamaized.net/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg") no-repeat;
+    background: url("https://static-dm.akamaized.net/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg") no-repeat center;
     background-size: 100% 100%;
+    padding-top: 10px;
 }
 
 .cabecera {
-    height: 1.5em;
+    height: 3.5em;
     text-align: right;
     margin-bottom: 10px;
     padding: 5px;
     min-width: 250px;
     flex-wrap: wrap;
+    border-bottom: #ffffff 2px solid;
 }
 
 .fb {
@@ -52,7 +54,6 @@ body {
 }
 
 .titulo {
-    margin: 10px;
     margin-top: 15px;
     height: 100px;
     text-align: center;
@@ -139,9 +140,45 @@ nav{
 }
 
 .cuerpo {
-    border: 5px solid black;
     flex-wrap: wrap;
     min-width: 250px;
+}
+
+.row{
+    padding: 5px;
+}
+
+.img-fluid{
+    border: 2px orangered solid;
+}
+
+.card-body{
+    padding: 10px;
+    background-color: white;
+}
+
+.card-title{
+    font-family: 'Navine Demo', sans-serif;
+    text-decoration: underline;
+}
+
+.card-text{
+    font-family: 'Navine Demo', sans-serif;
+    font-size: 13px;
+}
+
+span{
+    display: block;
+    padding: 5px;
+}
+
+.ocul{
+    display: none;
+}
+
+.ver{
+    color:blue;
+    cursor: pointer;
 }
 
 .pie {
@@ -173,6 +210,7 @@ nav{
     font-size: 20px;
     font-family:'Ghost Clan', sans-serif;
     letter-spacing: 2px;
+    color:black;
 }
 
 .soporte {
@@ -209,6 +247,7 @@ nav{
     font-size: 20px;
     font-family:'Ghost Clan', sans-serif;
     letter-spacing: 2px;
+    color:black;
 }
 
 .pegi18 {
