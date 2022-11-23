@@ -10,15 +10,6 @@ function principal(){
         v.setAttribute("id",id);
         id++;
     }
-
-    let ocultos = document.getElementsByClassName("ocul");
-
-    id = 1;
-
-    for (o of ocultos){
-        o.setAttribute("id",id);
-        id++;
-    }
 }
 
 function cargarVer(id){
