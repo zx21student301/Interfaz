@@ -37,6 +37,16 @@ function principal(){
     //variable para diferenciar el card que se encuentra dentro de otro
     let matrizVetos = document.getElementById("matrizVetos");
     matrizVetos.setAttribute("onclick","mostrarCardMatrizVetos()");
+    matrizVetos.setAttribute("abierto","false");
+
+    //crea un span en el elemento p con id "text4" dentro de la card 4
+    let p = document.getElementById("text4");
+
+    let cerrar = document.createElement("span");
+    cerrar.setAttribute("id","span4");
+    cerrar.setAttribute("onclick","mostrarCardMatrizVetos()");
+    cerrar.setAttribute("abierto","false");
+    p.appendChild(cerrar);
 
     //recoge el elmento de la class "contacto" y le añade un atributo
     let contacto = document.getElementById("contacto");
@@ -54,6 +64,8 @@ function cargarVer(id){
     let imgA = document.getElementById("imgAmpliada"+id);
     let card = document.getElementById("row"+id);
     let menos = document.getElementById("m"+id);
+    let enlace = document.createElement("a");
+    let enlacePuesto = false;
 
     let ocultos = document.getElementsByClassName("ocul"+id);
 
@@ -77,7 +89,17 @@ function cargarVer(id){
         menos.setAttribute("style","display:block");
 
         ver.setAttribute("abierto","true");
-        ver.innerHTML = "Ver menos";
+        ver.innerHTML = "";
+
+        if(enlacePuesto == false){
+            enlace.setAttribute("href","#card"+id);
+            enlace.setAttribute("class","sr-only sr-only-focusable");
+            enlace.innerHTML = "Ver menos";
+            ver.appendChild(enlace);
+            enlacePuesto = true;
+        }else if(enlacePuesto){
+            enlace.innerHTML = "Ver menos";
+        }
 
     }else if(abierto == "true"){
 
@@ -102,12 +124,37 @@ function cargarVer(id){
 
 //funcion para abrir y cerrar el card que se encuentra dentro de otro
 function mostrarCardMatrizVetos(){
-    
-}
+    let ver = document.getElementById("matrizVetos");
+    let abierto = ver.getAttribute("abierto");
+    let spans = document.getElementsByClassName("ocul4");
+    let cerrar = document.getElementById("span4");
 
-//funcion para crear el formulario cuando se cargue la pagina
-function crearForm(){
+    if(abierto == "false"){
 
+        for (s of spans){
+            s.setAttribute("style","display:block;");
+        }
+
+        ver.setAttribute("abierto","true");
+        ver.innerHTML = "Cerrar matriz de equilibrio y agentes más vetados";
+        
+        cerrar.setAttribute("style","display:block;");
+        cerrar.setAttribute("abierto","true");
+        cerrar.innerHTML = "Cerrar matriz de equilibrio y agentes más vetados";
+
+    }else if(abierto == "true"){
+
+        for (s of spans){
+            s.setAttribute("style","display:none;");
+        }
+
+        ver.setAttribute("abierto","false");
+        ver.innerHTML = "Ver matriz de equilibrio y agentes más vetados";
+        
+        cerrar.setAttribute("style","display:none;");
+        cerrar.setAttribute("abierto","false");
+        
+    }
 }
 
 //funcion para ver o dejar de ver el formulario

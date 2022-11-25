@@ -176,11 +176,6 @@ nav{
     text-decoration: underline;
 }
 
-#matrizVetos{
-    color:blue;
-    cursor: pointer;
-}
-
 .card-body{
     font-family: 'Navine Demo', sans-serif;
     font-size: 13px;
@@ -210,12 +205,40 @@ nav{
     border: 2px solid black;
 }
 
+/*Estilo para la card 4*/
+.row4{
+    text-align: center;
+}
+
+#matrizVetos{
+    color:blue;
+    cursor: pointer;
+}
+
+.ocul4{
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+}
+
+#span4{
+    color:blue;
+    cursor: pointer;
+}
+
+/*Estilo para los spans y los textos "ver más", "ver menos" dentro de todas las cards*/
 span{
     display: block;
     padding: 5px;
 }
 
 .ver, .menos{
+    color:blue;
+    cursor: pointer;
+}
+
+.ver a {
+    text-decoration: none;
     color:blue;
     cursor: pointer;
 }
