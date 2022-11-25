@@ -69,6 +69,7 @@ body {
     float: left;
     width: 100%;
 }
+
 /*Estilo para el logo principal de la página*/
 .r6Titulo {
     width: 350px;
@@ -274,6 +275,12 @@ span{
 }
 
 /*Estilo para el contenido del segundo elemento de la lista*/
+.listInfo{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+}
+
 .info_list a{
     color:white;
     text-decoration: none;
