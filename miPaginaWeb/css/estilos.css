@@ -242,12 +242,32 @@ span{
     color:blue;
     cursor: pointer;
 }
+
+/*Estilo para el formulario*/
+#cardF{
+    text-align: center;
+}
+
+form input{
+    padding: 10px;
+}
+
+/*Estilo para el "p" que cierra el formulario*/
+#cerrarForm{
+    color:blue;
+    cursor: pointer;
+}
+
+/*Estilo para el boton del formulario*/
+
+
 /*Estilo para el pie de la página*/
 .pie {
     margin-top: 40px;
     flex-wrap: wrap;
     min-width: 250px;
 }
+
 /*Estilo para la lista del pie*/
 .listaPie{
     display: flex;

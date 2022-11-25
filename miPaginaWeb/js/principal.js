@@ -48,12 +48,25 @@ function principal(){
     cerrar.setAttribute("abierto","false");
     p.appendChild(cerrar);
 
+    //pone el div-formulario en oculto y añade una serie de atributos al mismo
+    let form = document.getElementById("div-form");
+    form.setAttribute("style","display:none;");
+    form.setAttribute("abierto","false");
+
+    //Añade una funcion al "p" que se usará para cerrar el formulario
+    let cerrarForm = document.getElementById("cerrarForm");
+    cerrarForm.setAttribute("onclick","cerrarForm()");
+
+    //Añade a todos los "inputs" del form un value
+    let campos = document.getElementsByClassName("form-control");
+
+    for (c of campos){
+        c.setAttribute("value","");
+    }
+
     //recoge el elmento de la class "contacto" y le añade un atributo
     let contacto = document.getElementById("contacto");
-    contacto.setAttribute("onclick","verForm()");
-
-    //crea el formulario en el div "formulario" y lo deja en display none
-    crearForm();
+    contacto.setAttribute("onclick","abrirForm()");
 }
 
 //funcion que se ejecuta cuando se hace click sobre el span con class "ver"
@@ -157,7 +170,31 @@ function mostrarCardMatrizVetos(){
     }
 }
 
-//funcion para ver o dejar de ver el formulario
-function verForm(){
+//funcion para ver el formulario
+function abrirForm(){
+    let form = document.getElementById("div-form");
+    let abierto = form.getAttribute("abierto");
 
+    if(abierto  == "false"){
+        form.setAttribute("style","display:block;");
+        form.setAttribute("abierto","true");
+    }
+}
+
+//funcion para dejar de ver el formulario y vaciar todos los datos
+function cerrarForm(){
+    let form = document.getElementById("div-form");
+    let abierto = form.getAttribute("abierto");
+
+    if(abierto == "true"){
+        form.setAttribute("style","display:none;");
+        form.setAttribute("abierto","false");
+    }
+
+    //vaciar de datos todos los campos del form
+    let campos = document.getElementsByClassName("form-control");
+
+    for (c of campos){
+        c.value = "";
+    }
 }

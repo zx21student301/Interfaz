@@ -315,35 +315,50 @@
           </div>
     </div>
 
-    <div class="formulario">
-        <form id="form">
-            <div class="form-floating mb-3" id="div-email">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Correo electrónico</label>
+    <!--Formulario-->
+    <div class="formulario" id="div-form">
+        <div class="card m-3" id="cardF">
+            <div class="row g-0">
+              <div class="col-md-2">
+                <p id="cerrarForm">Cerrar formulario</p>
               </div>
-              <div class="row" id="fila-n-a">
-                <div class="col">
-                    <div class="form-floating mb-3" id="div-n">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Nombre</label>
-                      </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                    <h2>Formulario de contacto</h2>
+                    <form id="form" method="post" onsubmit="return validarContenido()">
+                        <div class="row" id="fila-n-a">
+                            <div class="col">
+                                <div class="form-floating mb-3" id="div-n">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Nombre</label>
+                                  </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating mb-3" id="div-a">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Apellidos</label>
+                                  </div>
+                            </div>
+                          </div>
+                        <div class="form-floating mb-3" id="div-email">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Correo electrónico</label>
+                          </div>
+                          <div class="input-group flex-nowrap mb-3" id="div-nt">
+                            <span class="input-group-text" id="addon-wrapping">+34</span>
+                            <input type="text" class="form-control" placeholder="Número de teléfono" aria-label="Username" aria-describedby="addon-wrapping">
+                          </div>
+                          <div class="form-floating mb-3" id="div-com">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Explique brevemente su problema</label>
+                          </div>
+                          <button class="btn" type="submit">Enviar</button>
+                          <button class="btn" type="reset">Borrar</button>
+                    </form>
                 </div>
-                <div class="col">
-                    <div class="form-floating mb-3" id="div-a">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Apellidos</label>
-                      </div>
-                </div>
               </div>
-              <div class="input-group flex-nowrap" id="div-nt">
-                <span class="input-group-text" id="addon-wrapping">+34</span>
-                <input type="text" class="form-control" placeholder="Número de teléfono" aria-label="Username" aria-describedby="addon-wrapping">
-              </div>
-              <div class="form-floating" id="div-com">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Explique brevemente su problema</label>
-              </div>
-        </form>
+            </div>
+          </div>
     </div>
 
         <div class="pie">
