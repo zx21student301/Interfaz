@@ -13,14 +13,37 @@ function principal(){
         idV++;
     }
 
-    let ocultos = document.getElementsByClassName("ocul");
+    let menos = document.getElementsByClassName("menos");
+    let idM = 1;
 
-    id = 1;
-
-    for (o of ocultos){
-        o.setAttribute("id",id);
-        id++;
+    //por cada elemento del array menos, le añade los siguientes atributos en la pagina html
+    for (m of menos){
+        m.setAttribute("onclick","cargarVer("+idM+")");
+        m.setAttribute("abierto","false");
+        m.setAttribute("id","m"+idM);
+        idM++;
     }
+
+    let cards = document.getElementsByClassName("card");
+
+    //Bucle que recorre el numero de tarjetas que hay y a los elementos de la class "ocul"+i los pone en diplay none
+    for(i=1;i < cards.length+1; i++){
+        let ocultos = document.getElementsByClassName("ocul"+i);
+        for (o of ocultos){
+            o.setAttribute("style","display:none");
+        }
+    }
+
+    //variable para diferenciar el card que se encuentra dentro de otro
+    let matrizVetos = document.getElementById("matrizVetos");
+    matrizVetos.setAttribute("onclick","mostrarCardMatrizVetos()");
+
+    //recoge el elmento de la class "contacto" y le añade un atributo
+    let contacto = document.getElementById("contacto");
+    contacto.setAttribute("onclick","verForm()");
+
+    //crea el formulario en el div "formulario" y lo deja en display none
+    crearForm();
 }
 
 //funcion que se ejecuta cuando se hace click sobre el span con class "ver"
