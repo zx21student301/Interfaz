@@ -243,6 +243,11 @@ span{
     cursor: pointer;
 }
 
+/*Estilo para la lista que se encuentra dentro de la Card3*/
+.ocul3 li{
+    list-style: inside;
+}
+
 /*Estilo para el formulario*/
 #cardF{
     text-align: center;
@@ -257,9 +262,6 @@ form input{
     color:blue;
     cursor: pointer;
 }
-
-/*Estilo para el boton del formulario*/
-
 
 /*Estilo para el pie de la página*/
 .pie {

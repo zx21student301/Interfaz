@@ -285,10 +285,52 @@
                   <img src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1fJRtP20S4MVQKi9QbUPRJ/77c07eb58efd056244adb15d22cba772/R6_DesignersNotes_Y7S4_Header_2.jpg" class="img-fluid" alt="NotasY7S4" id="imgAmpliada3" style="display: none;">  
                   <h3 class="card-title">Notas sobre el diseño de la pretemporada Y7S4</h3>
                   <p class="card-text"><span>En esta entrega de las Notas sobre el diseño profundizamos en los detalles sobre los cambios en el equilibrio del juego que llegan al el servidor de pruebas y explicamos las razones que nos han llevado a realizarlos.</span>
-                    <span class="ocul3"></span>
-                    <span class="ocul3"></span>
-                    <span class="ocul3"></span>
-                    <span class="ocul3"></span>
+                    <span class="ocul3"><h2 class="ocul3">TODOS LOS AGENTES</h2></span>
+                    <span class="ocul3"><h4 class="ocul3">ESTADÍSTICAS BÁSICAS</h4></span>
+                    <span class="ocul3">Ahora, todos los agentes se moverán a la misma velocidad mientras apuntan por la mira. Con este cambio, los agentes rápidos se desplazarán más rápido por el mapa, y los agentes pesados recibirán más daño, pero ambos estarán en igualdad de condiciones a la hora de entablar combate y buscar los disparos a la cabeza. La relación entre la velocidad y el blindaje siempre ha estado algo desequilibrada. La velocidad es un beneficio en toda situación y tiene un impacto directo en tu rendimiento, pero el blindaje carece del mismo efecto si un solo disparo en la cabeza puede matarte. Esto significa que los agentes lentos siempre están en desventaja en un tiroteo si ambos jugadores tienen buena puntería. Este cambio igualará las cosas en el campo de batalla.</span>
+                    <span class="ocul3"><h2 class="ocul3">EQUILIBRIO DE LOS AGENTES</h2></span>
+                    <span class="ocul3"><h4 class="ocul3">ALIBI</h4></span>
+                    <span class="ocul3">
+                        <ul>
+                            <li>Se ha eliminado la mira 1.5x del MX4 Storm.</li>
+                            <li>El Prisma ya no se detecta como agente cuando se lanza fuera del edificio.</li>
+                        </ul>
+                    </span>
+                    <span class="ocul3"><h4 class="ocul3">ARUNI</h4></span>
+                    <span class="ocul3">
+                        <ul>
+                            <li>Velocidad: 1 (en lugar de 2)</li>
+                            <li>Blindaje: 3 (en lugar de 2)</li>
+                        </ul>
+                    </span>
+                    <span class="ocul3"><h4 class="ocul3">DOKKAEBI</h4></span>
+                    <span class="ocul3">
+                        <ul>
+                            <li>Velocidad: 3 (en lugar de 2)</li>
+                            <li>Blindaje: 1 (en lugar de 2)</li>
+                        </ul>
+                    </span>
+                    <span class="ocul3"><h4 class="ocul3">ECHO</h4></span>
+                    <span class="ocul3">
+                        <ul>
+                            <li>Velocidad: 2 (en lugar de 1)</li>
+                            <li>Blindaje: 2 (en lugar de 3)</li>
+                        </ul>
+                    </span>
+                    <span class="ocul3"><h4 class="ocul3">ELA</h4></span>
+                    <span class="ocul3">
+                        <ul>
+                            <li>Velocidad: 2 (en lugar de 3)</li>
+                            <li>Blindaje: 2 (en lugar de 1)</li>
+                        </ul>
+                    </span>
+                    <span class="ocul3"><h4 class="ocul3">MUTE</h4></span>
+                    <span class="ocul3">
+                        <ul>
+                            <li>Velocidad: 1 (en lugar de 2)</li>
+                            <li>Blindaje: 3 (en lugar de 2)</li>
+                        </ul>
+                    </span>
                     <!--Card 4-->
                     <div class="card m-3 ocul3" id="card4">
                         <div class="row g-0" id="row4" style="text-align:center;">
@@ -324,32 +366,32 @@
               </div>
               <div class="col-md-7">
                 <div class="card-body">
-                    <h2>Formulario de contacto</h2>
+                    <h2 id="titulo-form">Formulario de contacto</h2>
                     <form id="form" method="post" onsubmit="return validarContenido()">
                         <div class="row" id="fila-n-a">
                             <div class="col">
                                 <div class="form-floating mb-3" id="div-n">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <input type="text" class="form-control" id="nombre" placeholder="name@example.com">
                                     <label for="floatingInput">Nombre</label>
                                   </div>
                             </div>
                             <div class="col">
                                 <div class="form-floating mb-3" id="div-a">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <input type="text" class="form-control" id="apellidos" placeholder="name@example.com">
                                     <label for="floatingInput">Apellidos</label>
                                   </div>
                             </div>
                           </div>
                         <div class="form-floating mb-3" id="div-email">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="text" class="form-control" id="email" placeholder="name@example.com">
                             <label for="floatingInput">Correo electrónico</label>
                           </div>
                           <div class="input-group flex-nowrap mb-3" id="div-nt">
                             <span class="input-group-text" id="addon-wrapping">+34</span>
-                            <input type="text" class="form-control" placeholder="Número de teléfono" aria-label="Username" aria-describedby="addon-wrapping">
+                            <input type="text" class="form-control" placeholder="Número de teléfono" aria-label="Username" aria-describedby="addon-wrapping" id="numTelf">
                           </div>
                           <div class="form-floating mb-3" id="div-com">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <textarea class="form-control" placeholder="Leave a comment here" id="comentarios" style="height: 100px"></textarea>
                             <label for="floatingTextarea2">Explique brevemente su problema</label>
                           </div>
                           <button class="btn" type="submit">Enviar</button>

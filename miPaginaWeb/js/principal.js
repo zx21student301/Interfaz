@@ -1,5 +1,7 @@
 onload = principal
 
+let formRelleno = false;
+
 function principal(){
     //recoge en un array todos los elementos de la class "ver"
     let ver = document.getElementsByClassName("ver");
@@ -172,12 +174,16 @@ function mostrarCardMatrizVetos(){
 
 //funcion para ver el formulario
 function abrirForm(){
-    let form = document.getElementById("div-form");
-    let abierto = form.getAttribute("abierto");
+    let divForm = document.getElementById("div-form");
+    let abierto = divForm.getAttribute("abierto");
+    let form = document.getElementById("form");
+    let titulo = document.getElementById("titulo-form");
 
     if(abierto  == "false"){
+        divForm.setAttribute("style","display:block;");
+        divForm.setAttribute("abierto","true");
         form.setAttribute("style","display:block;");
-        form.setAttribute("abierto","true");
+        titulo.innerHTML = "Formulario de contacto"
     }
 }
 
@@ -196,5 +202,94 @@ function cerrarForm(){
 
     for (c of campos){
         c.value = "";
+    }
+}
+
+//funcion que valida que los campos del formulario tengan los datos necesarios 
+function validarContenido(){
+    let nombre = document.getElementById("nombre");
+    let apellidos = document.getElementById("apellidos");
+    let email = document.getElementById("email");
+    let telf = document.getElementById("numTelf");
+    let telfLong = telf.value.length;
+    let coments = document.getElementById("comentarios");
+
+    let nomApTrue = false;
+    let emailTrue = false;
+    let telfTrue = false;
+    let comentTrue = false;
+
+    let soloLetras = new RegExp('^[A-Z]+$','i');
+    let emailCorrecto = new RegExp(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
+    let soloNums = new RegExp(/^[0-9]+$/);
+
+    if(!soloLetras.test(nombre.value) | !soloLetras.test(apellidos.value)){
+        if(!soloLetras.test(nombre.value)){
+            nombre.setAttribute("class","form-control is-invalid");
+        }
+        if(!soloLetras.test(apellidos.value)){
+            apellidos.setAttribute("class","form-control is-invalid");
+        }
+        if(soloLetras.test(nombre.value)){
+            nombre.setAttribute("class","form-control");
+        }
+        if(soloLetras.test(apellidos.value)){
+            apellidos.setAttribute("class","form-control");
+        }
+        nomApTrue = false;
+    }else{
+        nombre.setAttribute("class","form-control");
+        apellidos.setAttribute("class","form-control");
+        nomApTrue = true;
+    }
+
+    if(!emailCorrecto.test(email.value)){
+        email.setAttribute("class","form-control is-invalid");
+        emailTrue = false;
+    }else{
+        email.setAttribute("class","form-control");
+        emailTrue = true;
+    }
+
+    if(telfLong == 9){
+        if(soloNums.test(telf.value)){
+            telf.setAttribute("class","form-control");
+            telfTrue = true;
+        }else{
+            telf.setAttribute("class","form-control is-invalid");
+            telfTrue = false;
+        }
+    }else{
+        telf.setAttribute("class","form-control is-invalid");
+        telfTrue = false;
+    }
+
+    if(coments.value == ""){
+        coments.setAttribute("class","form-control is-invalid");
+        comentTrue = false;
+    }else{
+        coments.setAttribute("class","form-control");
+        comentTrue = true;
+    }
+
+    if(nomApTrue & emailTrue & telfTrue & comentTrue){
+        formRelleno = true;
+        formCompleto();
+        return false;
+    }else{
+        return false;
+    }
+
+}
+
+//funcion para cambiar el contenido de la tarjeta "div-form" cuando el formulario se rellena correctamente
+function formCompleto(){
+    let form = document.getElementById("form");
+    let titulo = document.getElementById("titulo-form");
+
+    if(formRelleno){
+        form.setAttribute("style","display:none;");
+        titulo.innerHTML = "Gracias, uno de nuestros operadores se pondrá en contacto con usted"
+        formRelleno = false;
     }
 }
