@@ -1,9 +1,11 @@
+/*Estilo para el background del body*/
 body {
     background: url("https://static-dm.akamaized.net/siege/prod/fe44dc601d5a0312a78258c19b2f9e5e.jpg") no-repeat;
     background-size: 100% 100%;
     padding-top: 10px;
 }
 
+/*Estilo para la cabecera superior de la página*/
 .cabecera {
     height: 3.5em;
     text-align: right;
@@ -14,6 +16,7 @@ body {
     border-bottom: red 2px solid;
 }
 
+/*Estilo para los logos de las redes sociales*/
 .fb {
     height: 25px;
     width: 25px;
@@ -53,6 +56,7 @@ body {
     margin-left: 20px;
 }
 
+/*Estilo para el titulo central de la página*/
 .titulo {
     margin: 10px;
     margin-top: 15px;
@@ -67,10 +71,12 @@ body {
     width: 100%;
 }
 
+/*Estilo para el logo principal de la página*/
 .r6Titulo {
     width: 350px;
 }
 
+/*Estilo para la barra de navegación de la página*/
 nav{
     position: sticky;
     top:0;
@@ -78,6 +84,7 @@ nav{
     background-color: black;
 }
 
+/*Estilo para el menu de la barra de navegación*/
 .menu {
     padding: 10px;
     margin-bottom:10px;
@@ -87,6 +94,7 @@ nav{
     min-width: 250px;
 }
 
+/*Estilo para la lista del menu (responsiva)*/
 .lista_menu {
     display: flex;
     flex-flow: column wrap;
@@ -96,6 +104,7 @@ nav{
     list-style: none;
 }
 
+/*Estilo para la lista del menu*/
 @media (min-width:759px) {
     .lista_menu {
         display: flex;
@@ -120,6 +129,7 @@ nav{
     border-bottom: 5px solid rgba(255, 0, 0, 0.39);
 }
 
+/*Estilo para cada elemento de la lista del menu*/
 .URLInicio,
 .URLNoticias,
 .URLAgentes,
@@ -140,29 +150,35 @@ nav{
     color: white;
 }
 
+/*Estilo para el cuerpo de la página*/
 .cuerpo{
     display: flex;
     flex-flow: row;
 }
 
-.indice {
-    display: none;
-}
-
+/*Estilo para el contenido de la pagina*/
 .contenido {
     position: relative;
     width: 100%;
     border: 5px solid black;
     flex-wrap: wrap;
     min-width: 250px;
+    text-align: center;
 }
 
+/*Estilo para el indice lateral (responsive)*/
+.indice {
+    display: none;
+}
+
+/*Estilo para el indice horizontal (responsive)*/
 .indice_reducido{
     display: inline;
     width: 100%;
     padding: 10px;
 }
 
+/*Estilo para los titulos (responsive)*/
 .titulosO{
     display: flex;
     flex-flow: row wrap;
@@ -184,6 +200,17 @@ nav{
 
 
 @media (min-width:759px) {
+    /*Estilo para el contenido de la pagina*/
+    .contenido {
+        position: relative;
+        width: 80%;
+        border: 5px solid black;
+        flex-wrap: wrap;
+        min-width: 250px;
+        color:white;
+    }
+
+    /*Estilo para el indice lateral*/
     .indice {
         display: block;
         position: relative;
@@ -203,6 +230,7 @@ nav{
         transition-duration: 0.9s;
     }
 
+    /*Estilo para los titulos*/
     .titulos{
         list-style: none;
         padding: 10px;
@@ -227,6 +255,7 @@ nav{
         color: white;
     }
 
+    /*Estilo para las sublistas*/
     .lA{
         padding: 5px;
         cursor: pointer;
@@ -234,6 +263,7 @@ nav{
 
     .lA > ul{
         display: none;
+        list-style: none;
     }
 
     .hbList{
@@ -263,6 +293,7 @@ nav{
 
     .lD > ul{
         display: none;
+        list-style: none;
     }
 
     .anList{
@@ -295,26 +326,20 @@ nav{
         text-decoration: none;
     }
 
-    .contenido {
-        position: relative;
-        width: 80%;
-        border: 5px solid black;
-        flex-wrap: wrap;
-        min-width: 250px;
-        color:white;
-    }
-
+    /*Estilo para el indice horizontal*/
     .indice_reducido{
         display: none;
     }
 }
 
+/*Estilo para el pie de la página*/
 .pie {
     margin-top: 15px;
     flex-wrap: wrap;
     min-width: 250px;
 }
 
+/*Estilo para la lista del pie*/
 .listaPie{
     display: flex;
     flex-flow: row wrap;
@@ -330,10 +355,12 @@ nav{
     width: 20%;
 }
 
+/*Estilo para el primer elemento de la lista*/
 .servicioCliente {
     width: 40%;
 }
 
+/*Estilo para el contenido del primer elemento de la lista*/
 .titulo_sc {
     font-size: 20px;
     font-family:'Ghost Clan', sans-serif;
@@ -351,10 +378,12 @@ nav{
     color:rgba(255, 0, 0, 0.5);
 }
 
+/*Estilo para el segundo elemento de la lista*/
 .infoAdicional {
     width: 40%;
 }
 
+/*Estilo para el contenido del segundo elemento de la lista*/
 .info_list a{
     color:white;
     text-decoration: none;
@@ -378,6 +407,7 @@ nav{
     color:rgba(255, 0, 0, 0.5);
 }
 
+/*Estilo para el tercer elemento de la lista*/
 .pegi18 {
     position: relative;
     top:40%;
