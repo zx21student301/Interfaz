@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Organización</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .titulo_pagina{
+            text-decoration: underline;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px black solid;
+            padding: 5px;
+        }
+
+        .titulo_tabla{
+            font-weight: bold;
+        }
+
+        tbody td{
+            font-size: small;
+        }
+
+        .titulo_celda{
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: skyblue;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <p class="titulo_pagina">Nombre de la empresa</p>
+    <p>Eslogan de la empresa</p>
+
+    <table>
+        <thead>
+            <tr class="celda">
+                <td class="titulo_tabla">Noticias</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="celda">
+                <td class="titulo_celda">Noticia 1</td>
+            </tr>
+            <tr class="celda">
+                <td>Desarrollo de la noticia 1</td>
+            </tr>
+            <tr class="celda">
+                <td>Noticia 2</td>
+            </tr>
+            <tr class="celda">
+                <td class="titulo_celda">Desarrollo de la noticia 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
