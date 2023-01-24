@@ -6,56 +6,120 @@
     <meta charset="utf-8">
     <title>Tablas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        La página ya está definida en el idioma español (3.1.1).Para hacer esta página accesible he añadido CSS incrustado 
+        siguiendo la parte 1.1.1-C de principio perceptible.
+        Con este CSS le doy color a la tabla asignando uno para cada una de las asignaturas (1.4.1), además amplio la tabla 
+        para que ocupe toda la pantalla y se vea mejor. EL titulo principal lo centro y subrayo (1.4.4) y el "p" del final
+        lo transformo en un elemento "caption" de la tabla y este lo coloco abajo centrado y en negrita (1.4.4).
+    -->
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        caption{
+            caption-side: bottom;
+            font-weight: bold;
+            font-size: smaller;
+        }
+
+        td{
+            border: 1px black solid;
+            padding: 10px;
+        }
+
+        .strong{
+            font-weight: bolder;
+            background-color: lightslategray;
+        }
+
+        .mat{
+            background-color: firebrick;
+        }
+
+        .leng{
+            background-color: skyblue;
+        }
+
+        .sociales{
+            background-color: lightgreen;
+        }
+
+        .natu{
+            background-color: limegreen;
+        }
+
+        .dep{
+            background-color: orangered;
+        }
+
+        .ing{
+            background-color: yellow;
+        }
+
+        .mus{
+            background-color: pink;
+        }
+    </style>
 </head>
 
 <body>
 
     <h1>Tablas</h1>
 
-    <table border="1">
+    <table>
+        <caption>En esta tabla puede verse el horario de la clase 3ºA</caption>
         <tr>
-            <td></td>
-            <td><strong>Lunes</strong></td>
-            <td><strong>Martes</strong></td>
-            <td><strong>Miércoles</strong></td>
-            <td><strong>Jueves</strong></td>
-            <td><strong>Viernes</strong></td>
+            <td class="strong"></td>
+            <td class="strong">Lunes</td>
+            <td class="strong">Martes</td>
+            <td class="strong">Miércoles</td>
+            <td class="strong">Jueves</td>
+            <td class="strong">Viernes</td>
         </tr>
         <tr>
-            <td><strong>10:00</strong></td>
-            <td>Matemáticas</td>
-            <td>Matemáticas</td>
-            <td>Matemáticas</td>
-            <td>Matemáticas</td>
-            <td>Matemáticas</td>
+            <td class="strong">10:00</td>
+            <td class="mat">Matemáticas</td>
+            <td class="mat">Matemáticas</td>
+            <td class="mat">Matemáticas</td>
+            <td class="mat">Matemáticas</td>
+            <td class="mat">Matemáticas</td>
         </tr>
         <tr>
-            <td><strong>11:00</strong></td>
-            <td>Lengua</td>
-            <td>Lengua</td>
-            <td>Lengua</td>
-            <td>Lengua</td>
-            <td>Lengua</td>
+            <td class="strong">11:00</td>
+            <td class="leng">Lengua</td>
+            <td class="leng">Lengua</td>
+            <td class="leng">Lengua</td>
+            <td class="leng">Lengua</td>
+            <td class="leng">Lengua</td>
         </tr>
         <tr>
-            <td><strong>12:00</strong></td>
-            <td>C.Sociales</td>
-            <td>C.Naturales</td>
-            <td>C.Sociales</td>
-            <td>C.Naturales</td>
-            <td>Deporte</td>
+            <td class="strong">12:00</td>
+            <td class="sociales">C.Sociales</td>
+            <td class="natu">C.Naturales</td>
+            <td class="sociales">C.Sociales</td>
+            <td class="natu">C.Naturales</td>
+            <td class="dep">Deporte</td>
         </tr>
         <tr>
-            <td><strong>13:00</strong></td>
-            <td>Inglés</td>
-            <td>Inglés</td>
-            <td>Inglés</td>
-            <td>Inglés</td>
-            <td>Músic</td>
+            <td class="strong">13:00</td>
+            <td class="ing">Inglés</td>
+            <td class="ing">Inglés</td>
+            <td class="ing">Inglés</td>
+            <td class="ing">Inglés</td>
+            <td class="mus">Música</td>
         </tr>
     </table>
 
-    <p>En esta tabla puede verse el horario de la clase 3ºA</p>
+    <!--<p>En esta tabla puede verse el horario de la clase 3ºA</p>-->
 
 </body>
 

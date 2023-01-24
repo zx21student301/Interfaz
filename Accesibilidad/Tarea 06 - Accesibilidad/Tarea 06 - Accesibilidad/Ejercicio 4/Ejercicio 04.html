@@ -6,6 +6,47 @@
     <meta charset="utf-8">
     <title>Formularios</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        La página ya está definida en el idioma español (3.1.1).Para hacer esta página accesible he añadido CSS incrustado 
+        siguiendo la parte 1.1.1-C de principio perceptible.
+        Para hacer el código html más claro y limpio he cambiado los br por labels colocados en bloque (4.1.1), he cambiado
+        el color del fondo del body y del formulario para que sea más visual (1.4.1) y por último resalto los titulos de los apartados 
+        del formulario desde el CSS poniendolos más grande y en negrita (1.4.4).
+    -->
+    <style>
+        body{
+            background-color: lightslategrey;
+        }
+        .strong{
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        form{
+            border-radius: 5px;
+            background-color: lightgrey;
+        }
+
+        form p{
+            margin-left: 5px;
+        }
+
+        form label{
+            display: block;
+            padding: 5px;
+            margin-left: 5px;
+        }
+
+        form input{
+            margin-left: 15px;
+        }
+
+        form button{
+            padding: 5px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,41 +54,39 @@
     <h1>Formularios</h1>
 
     <form method="post" action="#">
-        <p><strong>Información personal</strong></p>
-        Nombre:
-        <input type="text" required />
-        <br/> Correo ELectrónico:
-        <input type="email" required />
-        <br/> Página personal:
-        <input type="url" placeholder="URL de tu página web personal" />
-        <br/>
+        <p class="strong">Información personal</p>
+        <label>Nombre:
+        <input type="text" required /></label>
+        <label> Correo Electrónico:
+        <input type="email" required /></label>
+        <label> Página personal:
+        <input type="url" placeholder="URL de tu página web personal" /></label>
 
-        <p><strong>Otra información</strong></p>
-        Fecha:
+        <p class="strong">Otra información</p>
+        <label>Fecha:</label>
         <input type="date" />
-        <br/> Mes:
+        <label> Mes:</label>
         <input type="month" />
-        <br/> Semana:
+        <label> Semana:</label>
         <input type="week" />
-        <br/> Tiempo:
+        <label> Tiempo:</label>
         <input type="time" />
-        <br/> Fecha y tiempo:
+        <label> Fecha y tiempo:</label>
         <input type="time" />
-        <br/> Número (min -10, max 10):
+        <label> Número (min -10, max 10):</label>
         <input type="number" min="-10" max="10" value="0" />
-        <br/> Intervalo (min 0, max 10):
+        <label> Intervalo (min 0, max 10):</label>
         <input type="range" />
-        <br/> Teléfono:
+        <label> Teléfono:</label>
         <input type="tel" />
-        <br/> Búsqueda:
+        <label> Búsqueda:</label>
         <input type="search" />
-        <br/> Color Favorito:
+        <label> Color Favorito:</label>
         <input type="color" />
-        <br/>
 
-        <p><strong>Controles</strong></p>
-        <input type="reset" value="Borrar" />
-        <input type="submit" value="Enviar" />
+        <p class="strong">Controles</p>
+        <button class="button" type="reset">Borrar</button>
+        <button class="button" type="submit">Enviar</button>
     </form>
 
 </body>

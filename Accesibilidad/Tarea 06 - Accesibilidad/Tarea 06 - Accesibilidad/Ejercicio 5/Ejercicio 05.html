@@ -6,30 +6,103 @@
     <meta charset="utf-8">
     <title>Imágenes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        La página ya está definida en el idioma español (3.1.1).Para hacer esta página accesible he añadido CSS incrustado 
+        siguiendo la parte 1.1.1-C de principio perceptible.
+        Añadiendo algunos elementos para que el codigo esté más ordenado y limpio (4.1.1) como el nav y los div, con el CSS
+        coloco el menu entero de forma horizontal para que sea más intuitivo para los usuarios (2.3.1). Además añado colores al menu
+        (1.4.1) y animaciones al pasar el ratón por encima (2.3.3), cambio el tamaño de la letra (1.4.4) y el espacio entre los items
+        (1.4.12).
+    -->
+    <style>
+        .div_indice{
+            float: left;
+            margin-left: 5%;
+            width: 20%;
+        }
+
+        .a_indice{
+            font-size: 55px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .a_indice:hover{
+            text-decoration: underline;
+            background-color: red;
+            color:white;
+        }
+
+        .div_menu{
+            float: left;
+            width: 50%;
+        }
+
+        nav li{
+            display: inline-block;
+            list-style: none;
+            width: 21%;
+            padding: 5px 10px;
+            text-align: center;
+            border:1px black solid;
+        }
+
+        nav li a{
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+        }
+
+        nav li:hover{
+            background-color: darkmagenta;
+        }
+
+        nav li a:hover{
+            color:white;
+            font-weight: bold;
+        }
+
+        .div_telf{
+            float: left;
+            width: 20%;
+            text-align: right;
+        }
+
+        .div_telf p{
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
-    <p>
-      <a href="#"><img src="flecha-izq.gif"/></a>
-      <a href="#">Índice</a>
-      <a href="#"><img src="flecha-der.gif"/></a>
-    </p>
+    <div class="div_container">
 
-    <p>
-        Menu:
-        <br />
-        <br />
-        <a href="#"><img src="logo.png" alt="Únete" />Únete</a>
-        <br />
-        <a href="#"><img src="logo.png" alt="Equipo" />Equipo</a>
-        <br />
-        <a href="#"><img src="logo.png" alt="Contacto" />Contacto</a>
-        <br />
-        <a href="#"><img src="logo.png" alt="Síguenos" />Síguenos</a>
-    </p>
+        <div class="div_indice">
+            <a href="#"><img src="flecha-izq.gif"/></a>
+            <a href="#" class="a_indice">Índice</a>
+            <a href="#"><img src="flecha-der.gif"/></a>
+        </div>
 
-    <p>Teléfono de contacto:<img src="telefono.gif" alt="Teléfono de contacto" /></p>
+        <div class="div_menu">
+            <nav>
+                <ul>
+                    <li class="ul_item"><a href="#"><img src="logo.png" />Únete</a></li>
+                    <li class="ul_item"><a href="#"><img src="logo.png" />Equipo</a></li>
+                    <li class="ul_item"><a href="#"><img src="logo.png" />Contacto</a></li>
+                    <li class="ul_item"><a href="#"><img src="logo.png" />Síguenos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="div_telf">
+            <p>Teléfono de contacto:
+            <img src="telefono.gif" alt="Teléfono de contacto" /></p>
+        </div>
+
+    </div>
 
 </body>
 
