@@ -1,0 +1,134 @@
+.barraSup{
+    width: 100%;
+    height: 50%;
+    background-color: blueviolet;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.barraSup p{
+    margin-bottom: 5%;
+    color:white;
+}
+
+.cajas div{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1%;
+    background-color: orange;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.latLeft{
+    background-color: yellow;
+    width: 100%;
+    height: 30%;
+}
+
+.latRight{
+    float: right;
+    background-color: pink;
+    width: 100%;
+    height: 20%;
+}
+
+@media(min-width:400px){
+    .barraSup{
+        width: 100%;
+        height: 50%;
+        background-color: blueviolet;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+    }
+    
+    .barraSup p{
+        margin-bottom: 5%;
+        color:white;
+    }
+
+    .cajas{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cajas > div{
+        width: 40%;
+        background-color: orange;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .caja2, .caja4{
+        float: right;
+        margin-right: 5%;
+        border: 1px black solid;
+    }
+
+    .caja1, .caja3{
+        float: left;
+        margin-left: 5%;
+        border: 1px black solid;
+    }
+    
+    .latLeft{
+        float: left;
+        background-color: yellow;
+        width: 60%;
+        height: 50%;
+    }
+    
+    .latRight{
+        float: right;
+        background-color: pink;
+        width: 40%;
+        height: 50%;
+    }
+}
+
+@media(min-width:700px){
+    .barraSup{
+        width: 100%;
+        height: 30%;
+        background-color: blueviolet;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+    }
+    
+    .barraSup p{
+        margin-bottom: 5%;
+        color:white;
+    }
+
+    .cajas{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .cajas div{
+        width: 20%;
+        background-color: orange;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    .latLeft{
+        float: left;
+        background-color: yellow;
+        width: 60%;
+        height: 70%;
+    }
+    
+    .latRight{
+        float: right;
+        background-color: pink;
+        width: 40%;
+        height: 70%;
+    }
+}
