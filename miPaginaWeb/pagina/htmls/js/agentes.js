@@ -3,49 +3,41 @@ onload = principal
 let hardBreacher = ["thermite", "hibana", "ace", "maverick"];
 let imgHB = ["https://static.wikia.nocookie.net/rainbowsix/images/4/44/R6_SWAT_Thermite.jpg","https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7mAs4mz2zA4wjPZsNg6tys/5e607795f95200f83b3d4be2f7cc4bba/r6-operators-list-hibana.png","https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5snW47tH4a5VuPhidr61sm/4bee3d218c40a6aeeedb97afbcea82cb/r6s-operator-list-ace.png","https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1MmaEupq7KOe6it1trqIWP/93730f7c3b2b7de5591243a9d5276dcf/r6-operators-list-maverick.png"];
 let descHb = ["a","b","c","Con el Demoledor explosivo de agua SELMA, el agua entra en juego. El dispositivo usa la presión hidráulica para atravesar superficies destructibles y reforzadas. Ace lanza el cilindro sobre aquello que quiere demoler, y el dispositivo se abre, desplegándose del todo. En suelos, techos y trampillas explota una sola vez, pero si se coloca sobre un muro rueda hacia abajo, detonando hasta dos veces (si hay espacio suficiente). Cada detonación abre una brecha rectangular, y al combinarse crean un agujero lo bastante grande para que pase un agente."];
-let contHb = 0;
 
 let entry = ["ash", "zofia", "jackal", "sledge", "buck", "nokk", "dokkaebi", "lion", "finka", "amaru", "ying", "iq", "blitz", "iana"];
 let imgEntry = ["https://static.wikia.nocookie.net/rainbow-six-sieg…o-width-down/278?cb=20151116160248&path-prefix=es",];
 let iconEntry = [];
 let descEntry = [];
-let contEntry = 0;
 
 let support = ["thatcher", "twitch", "kali", "flores"];
 let imgSupport = [];
 let iconSupport = [];
 let descSupport = [];
-let contSupp = 0;
 
 let flexAtac = ["nomad", "capitão", "fuze", "glaz", "montagne", "gridlock", "blackbeard", "osa", "zero"];
 let imgFlexA = [];
 let iconFlexA=[];
 let descFlexA = [];
-let contFlexA = 0;
 
 let ancla = ["rook", "doc", "maestro", "smoke", "echo", "melusi", "warden", "tachanka", "mira", "kaid"];
 let imgAncla = [];
 let iconAncla = [];
 let descAncla = [];
-let contAncla = 0;
 
 let roamer = ["jäger", "valkyrie", "vigil", "alibi", "oryx", "caveira"];
 let imgRoamer = [];
 let iconRoamer = [];
 let descRoamer = [];
-let contRoamer = 0;
 
 let trampero =  ["kapkan", "lesion", "frost", "ela", "goyo", "thorn", "azami"];
 let imgTrampero = [];
 let iconTrampero = [];
 let descTrampero = [];
-let contTramp = 0;
 
 let flexDefen = ["bandit", "castle", "mute", "clash", "mozzie", "wamai", "aruni", "thunderbird","solis"];
 let igmFlexD = [];
 let iconFlexD = [];
 let descFlexD = [];
-let contFlexD= 0;
 
 let arrays = [hardBreacher,entry,support,flexAtac,ancla,roamer,trampero,flexDefen];
 
@@ -84,36 +76,34 @@ function principal() {
 }
 
 function cambiarDiv() {
-    idTipo = $(this).children("ul").attr("id");
     idNum = $(this).children("ul").children();
 
-    if (idTipo == "hb" && contHb == 0){
-        for (let index = 0; index < idNum.length; index++) {
-            $("#rowCard").append(
-                '<div class="card col-md-3">'+
-                '   <div class="imgBx">'+
-                '        <img src="js/img/agentes/Atacantes/HardBreach/thermite.png">'+
-                '   </div>'+
-                '   <div class="contentBx">'+
-                '       <h2>Nike Shoes</h2>'+
-                '       <div class="size">'+
-                '           <h3>Size :</h3>'+
-                '           <span>7</span>'+
-                '           <span>8</span>'+
-                '           <span>9</span>'+
-                '           <span>10</span>'+
-                '       </div>'+
-            '           <div class="color">'+
-                '           <h3>Color :</h3>'+
-                '           <span></span>'+
-                '           <span></span>'+
-                '           <span></span>'+
-                '       </div>'+
-                '       <a href="#">Buy Now</a>'+
-                '   </div>'+
-                '</div');
-        }
-        contHb = 1;
+    $("#rowCard").empty();
+
+    for (let index = 0; index < idNum.length; index++) {
+        $("#rowCard").append(
+            '<div class="card col-md-3">'+
+            '   <div class="imgBx">'+
+            '        <img src="js/img/agentes/Atacantes/HardBreach/thermite.png">'+
+            '   </div>'+
+            '   <div class="contentBx">'+
+            '       <h2>Nike Shoes</h2>'+
+            '       <div class="size">'+
+            '           <h3>Size :</h3>'+
+            '           <span>7</span>'+
+            '           <span>8</span>'+
+            '           <span>9</span>'+
+            '           <span>10</span>'+
+            '       </div>'+
+        '           <div class="color">'+
+            '           <h3>Color :</h3>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '       </div>'+
+            '       <a href="#">Buy Now</a>'+
+            '   </div>'+
+            '</div');
     }
 }
 
