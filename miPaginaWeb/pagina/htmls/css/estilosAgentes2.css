@@ -32,7 +32,7 @@
 }
 
 .container .card:after{
-  content: 'Nike';
+  content: 'agente';
   position: relative;
   top: 30%;
   left: -20%;

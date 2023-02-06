@@ -86,7 +86,7 @@ function cambiarDiv() {
     for (let index = 0; index < idNum.length; index++) {
         if(idTipo == "hb"){
             agente = {
-                nombre : hardBreacher[index],
+                nombre : hardBreacher[index].toUpperCase(),
                 imagen : imgHB[index],
                 descrip : descHb[index] 
             }
