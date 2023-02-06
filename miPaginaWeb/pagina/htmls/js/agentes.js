@@ -1,7 +1,7 @@
 onload = principal
 
 let hardBreacher = ["thermite", "hibana", "ace", "maverick"];
-let imgHB = ["https://static.wikia.nocookie.net/rainbowsix/images/4/44/R6_SWAT_Thermite.jpg","https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7mAs4mz2zA4wjPZsNg6tys/5e607795f95200f83b3d4be2f7cc4bba/r6-operators-list-hibana.png","https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5snW47tH4a5VuPhidr61sm/4bee3d218c40a6aeeedb97afbcea82cb/r6s-operator-list-ace.png","https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1MmaEupq7KOe6it1trqIWP/93730f7c3b2b7de5591243a9d5276dcf/r6-operators-list-maverick.png"];
+let imgHB = ["js/img/agentes/Atacantes/HardBreach/thermite.png","js/img/agentes/Atacantes/HardBreach/hibana.png","js/img/agentes/Atacantes/HardBreach/ace.png","js/img/agentes/Atacantes/HardBreach/maverick.png"];
 let descHb = ["a","b","c","Con el Demoledor explosivo de agua SELMA, el agua entra en juego. El dispositivo usa la presión hidráulica para atravesar superficies destructibles y reforzadas. Ace lanza el cilindro sobre aquello que quiere demoler, y el dispositivo se abre, desplegándose del todo. En suelos, techos y trampillas explota una sola vez, pero si se coloca sobre un muro rueda hacia abajo, detonando hasta dos veces (si hay espacio suficiente). Cada detonación abre una brecha rectangular, y al combinarse crean un agujero lo bastante grande para que pase un agente."];
 
 let entry = ["ash", "zofia", "jackal", "sledge", "buck", "nokk", "dokkaebi", "lion", "finka", "amaru", "ying", "iq", "blitz", "iana"];
@@ -43,6 +43,8 @@ let arrays = [hardBreacher,entry,support,flexAtac,ancla,roamer,trampero,flexDefe
 
 let listaAbierta= false;
 
+let agente = {};
+
 function principal() {
     let liA = document.getElementsByClassName("lA");
 
@@ -76,18 +78,27 @@ function principal() {
 }
 
 function cambiarDiv() {
+    idTipo = $(this).children("ul").attr("id");
     idNum = $(this).children("ul").children();
 
     $("#rowCard").empty();
 
     for (let index = 0; index < idNum.length; index++) {
+        if(idTipo == "hb"){
+            agente = {
+                nombre : hardBreacher[index],
+                imagen : imgHB[index],
+                descrip : descHb[index] 
+            }
+        }
+
         $("#rowCard").append(
             '<div class="card col-md-3">'+
             '   <div class="imgBx">'+
-            '        <img src="js/img/agentes/Atacantes/HardBreach/thermite.png">'+
+            `        <img src="${agente.imagen}">`+
             '   </div>'+
             '   <div class="contentBx">'+
-            '       <h2>Nike Shoes</h2>'+
+            `       <h2>${agente.nombre}</h2>`+
             '       <div class="size">'+
             '           <h3>Size :</h3>'+
             '           <span>7</span>'+
@@ -95,7 +106,7 @@ function cambiarDiv() {
             '           <span>9</span>'+
             '           <span>10</span>'+
             '       </div>'+
-        '           <div class="color">'+
+            '       <div class="color">'+
             '           <h3>Color :</h3>'+
             '           <span></span>'+
             '           <span></span>'+
