@@ -48,6 +48,7 @@ function principal() {
 
     for (i = 0; i < liA.length; i++) {
         liA[i].setAttribute("onclick", "abrirSublistaA(" + i + ")");
+        $(liA[i]).click(cambiarDiv);
         liA[i].setAttribute("abierta","false");
     }
 
@@ -62,7 +63,7 @@ function principal() {
     let listaHb = document.getElementsByClassName("hbList");
 
     for (let index = 0; index < listaHb.length; index++) {
-        listaHb[index].setAttribute("id","hb_"+index);
+        listaHb[index].setAttribute("id",index);
     }
 
     let spanHb = document.getElementsByClassName("iconHb");
@@ -72,27 +73,46 @@ function principal() {
         imgHb.setAttribute("style","width:50px;")
         spanHb[index].appendChild(imgHb);        
     }
-
-    $(".hbList").click(cambiarDiv);
 }
 
 function cambiarDiv() {
-    idCompleto = $(this).attr("id");
-    idTipo = idCompleto.split('_')[0];
-    idNum = idCompleto.split('_')[1];
+    idTipo = $(this).children("ul").attr("id");
+    idNum = $(this).children("ul").children();
+
+    for (let index = 0; index < idNum.length; index++) {
+        $("#rowCard").append(
+            '<div class="card col-md-3">'+
+            '   <div class="imgBx">'+
+            '        <img src="js/img/agentes/Atacantes/HardBreach/thermite.png">'+
+            '   </div>'+
+            '   <div class="contentBx">'+
+            '       <h2>Nike Shoes</h2>'+
+            '       <div class="size">'+
+            '           <h3>Size :</h3>'+
+            '           <span>7</span>'+
+            '           <span>8</span>'+
+            '           <span>9</span>'+
+            '           <span>10</span>'+
+            '       </div>'+
+        '           <div class="color">'+
+            '           <h3>Color :</h3>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '       </div>'+
+            '       <a href="#">Buy Now</a>'+
+            '   </div>'+
+            '</div')
+        
+    }
+
 
     if(idTipo == 'hb'){
         let personaje ={
             nombre : hardBreacher[idNum],
             imagen : imgHB[idNum],
-            icono : "js/img/r6icons/svg/"+this.nombre+".svg",
             descripcion : descHb[idNum]
         };
-
-        $(".postcard__img").attr("src", personaje.imagen);
-        $(".postcard__title blue").html(personaje.nombre);
-        //$(".card-img-top").attr("src", personaje.icono);
-        $(".postcard__preview-txt").html(personaje.descripcion);
     }
 }
 

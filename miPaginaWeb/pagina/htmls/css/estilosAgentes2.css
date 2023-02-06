@@ -154,7 +154,8 @@
 }
 
 .container .card .contentBx .color span:nth-child(3){
-  background: #03a9f4;
+  background: transparent;
+  border: 1px white solid;
 }
 
 .container .card .contentBx .color span:nth-child(4){
