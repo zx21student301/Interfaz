@@ -77,7 +77,7 @@ body {
 
 /*Estilo para la barra de navegación de la página*/
 nav{
-    position: sticky;
+    position: relative;
     top:0;
     z-index: 1;
     background-color: black;
@@ -105,6 +105,13 @@ nav{
 
 /*Estilo para la lista del menu*/
 @media (min-width: 759px){
+    nav{
+        position: sticky;
+        top:0;
+        z-index: 1;
+        background-color: black;
+    }
+
     .lista_menu {
         display: flex;
         flex-flow: row wrap;
@@ -125,7 +132,7 @@ nav{
     color: #BFBA9F;
     font-family: 'Ghost Clan 3D', sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .URLInicio:hover,
@@ -140,7 +147,6 @@ nav{
     font-family: 'Ghost Clan 3D', sans-serif;
     font-weight: bold;
     font-size: 25px;
-    padding: 5px;
     text-decoration: none;
 }
 

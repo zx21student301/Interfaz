@@ -2,41 +2,34 @@ onload = principal
 
 let hardBreacher = ["thermite", "hibana", "ace", "maverick"];
 let imgHB = ["js/img/agentes/Atacantes/HardBreach/thermite.png","js/img/agentes/Atacantes/HardBreach/hibana.png","js/img/agentes/Atacantes/HardBreach/ace.png","js/img/agentes/Atacantes/HardBreach/maverick.png"];
-let descHb = ["a","b","c","Con el Demoledor explosivo de agua SELMA, el agua entra en juego. El dispositivo usa la presión hidráulica para atravesar superficies destructibles y reforzadas. Ace lanza el cilindro sobre aquello que quiere demoler, y el dispositivo se abre, desplegándose del todo. En suelos, techos y trampillas explota una sola vez, pero si se coloca sobre un muro rueda hacia abajo, detonando hasta dos veces (si hay espacio suficiente). Cada detonación abre una brecha rectangular, y al combinarse crean un agujero lo bastante grande para que pase un agente."];
+let velBlinHb = [[2,2],[3,1],[2,2],[3,1]]
 
 let entry = ["ash", "zofia", "jackal", "sledge", "buck", "nokk", "dokkaebi", "lion", "finka", "amaru", "ying", "iq", "blitz", "iana"];
 let imgEntry = ["https://static.wikia.nocookie.net/rainbow-six-sieg…o-width-down/278?cb=20151116160248&path-prefix=es",];
-let iconEntry = [];
 let descEntry = [];
 
 let support = ["thatcher", "twitch", "kali", "flores"];
 let imgSupport = [];
-let iconSupport = [];
 let descSupport = [];
 
 let flexAtac = ["nomad", "capitão", "fuze", "glaz", "montagne", "gridlock", "blackbeard", "osa", "zero"];
 let imgFlexA = [];
-let iconFlexA=[];
 let descFlexA = [];
 
 let ancla = ["rook", "doc", "maestro", "smoke", "echo", "melusi", "warden", "tachanka", "mira", "kaid"];
 let imgAncla = [];
-let iconAncla = [];
 let descAncla = [];
 
 let roamer = ["jäger", "valkyrie", "vigil", "alibi", "oryx", "caveira"];
 let imgRoamer = [];
-let iconRoamer = [];
 let descRoamer = [];
 
 let trampero =  ["kapkan", "lesion", "frost", "ela", "goyo", "thorn", "azami"];
 let imgTrampero = [];
-let iconTrampero = [];
 let descTrampero = [];
 
 let flexDefen = ["bandit", "castle", "mute", "clash", "mozzie", "wamai", "aruni", "thunderbird","solis"];
 let igmFlexD = [];
-let iconFlexD = [];
 let descFlexD = [];
 
 let arrays = [hardBreacher,entry,support,flexAtac,ancla,roamer,trampero,flexDefen];
@@ -88,7 +81,7 @@ function cambiarDiv() {
             agente = {
                 nombre : hardBreacher[index].toUpperCase(),
                 imagen : imgHB[index],
-                descrip : descHb[index] 
+                velBlin : velBlinHb[index] 
             }
         }
 
@@ -99,20 +92,18 @@ function cambiarDiv() {
             '   </div>'+
             '   <div class="contentBx">'+
             `       <h2>${agente.nombre}</h2>`+
-            '       <div class="size">'+
-            '           <h3>Size :</h3>'+
-            '           <span>7</span>'+
-            '           <span>8</span>'+
-            '           <span>9</span>'+
-            '           <span>10</span>'+
-            '       </div>'+
-            '       <div class="color">'+
-            '           <h3>Color :</h3>'+
+            `       <div class="vel _${agente.velBlin[0]}">`+
+            '           <h3>Velocidad :</h3>'+
             '           <span></span>'+
             '           <span></span>'+
             '           <span></span>'+
             '       </div>'+
-            '       <a href="#">Buy Now</a>'+
+            `       <div class="blin _${agente.velBlin[1]}">`+
+            '           <h3>Blindaje :</h3>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '       </div>'+
             '   </div>'+
             '</div');
     }

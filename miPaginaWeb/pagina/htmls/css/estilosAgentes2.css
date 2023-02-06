@@ -87,9 +87,10 @@
   letter-spacing: 1px;
   color: #fff;
   margin: 0;
+  margin-bottom: 30px;
 }
 
-.container .card .contentBx .size, .container .card .contentBx .color {
+.container .card .contentBx .vel, .container .card .contentBx .blin {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,19 +101,19 @@
   padding-bottom: 0;
 }
 
-.container .card:hover .contentBx .size{
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.5s;
-}
-
-.container .card:hover .contentBx .color{
+.container .card:hover .contentBx .vel{
   opacity: 1;
   visibility: visible;
   transition-delay: 0.6s;
 }
 
-.container .card .contentBx .size h3, .container .card .contentBx .color h3{
+.container .card:hover .contentBx .blin{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card .contentBx .vel h3, .container .card .contentBx .blin h3{
   color: #fff;
   font-weight: 300;
   font-size: 14px;
@@ -121,27 +122,7 @@
   margin-right: 10px;
 }
 
-.container .card .contentBx .size span{
-  width: 26px;
-  height: 26px;
-  text-align: center;
-  line-height: 26px;
-  font-size: 14px;
-  display: inline-block;
-  color: #111;
-  background: #fff;
-  margin: 0 5px;
-  transition: 0.5s;
-  color: #111;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.container .card .contentBx .size span:hover{
-  background: #9bdc28;
-}
-
-.container .card .contentBx .color span{
+.container .card .contentBx .vel span{
   width: 20px;
   height: 20px;
   background: #ff0;
@@ -150,37 +131,59 @@
   cursor: pointer;
 }
 
-.container .card .contentBx .color span:nth-child(2){
-  background: #9bdc28;
+.container .card .contentBx .blin span{
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
-.container .card .contentBx .color span:nth-child(3){
+/*Formato de estilo para agentes de velocidad 1*/
+.container .card .contentBx ._1 span:nth-child(2){
+  background: white;
+  border: 2px white solid;
+}
+
+.container .card .contentBx ._1 span:nth-child(3){
   background: transparent;
-  border: 1px white solid;
+  border: 2px white solid;
 }
 
-.container .card .contentBx .color span:nth-child(4){
-  background: #e91e63;
+.container .card .contentBx ._1 span:nth-child(4){
+  background: transparent;
+  border: 2px white solid;
 }
 
-.container .card .contentBx a{
-  display: inline-block;
-  padding: 10px 20px;
-  background: #fff;
-  border-radius: 4px;
-  margin-top: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.5s;
-  margin-top: 0;
+/*Formato de estilo para agentes de velocidad 2*/
+.container .card .contentBx ._2 span:nth-child(2){
+  background: white;
+  border: 2px white solid;
 }
 
-.container .card:hover .contentBx a{
-  opacity: 1;
-  transform: translateY(0px);
-  transition-delay: 0.75s;
-  
+.container .card .contentBx ._2 span:nth-child(3){
+  background: white;
+  border: 2px white solid;
+}
+
+.container .card .contentBx ._2 span:nth-child(4){
+  background: transparent;
+  border: 2px white solid;
+}
+
+/*Formato de estilo para agentes de velocidad 3*/
+.container .card .contentBx ._3 span:nth-child(2){
+  background: white;
+  border: 2px white solid;
+}
+
+.container .card .contentBx ._3 span:nth-child(3){
+  background: white;
+  border: 2px white solid;
+}
+
+.container .card .contentBx ._3 span:nth-child(4){
+  background: white;
+  border: 2px white solid;
 }
