@@ -260,62 +260,17 @@ nav{
     }
 
     /*Estilo para las sublistas*/
-    .lA{
+    .lAgen{
         padding: 5px;
         cursor: pointer;
     }
 
-    .lA > ul{
+    .lAgen > ul{
         display: none;
         list-style: none;
     }
 
-    .hbList{
-        padding: 3px;
-        list-style: none;
-    }
-
-    .efList{
-        padding: 3px;
-        list-style: none;
-    }
-    
-    .supList{
-        padding: 3px;
-        list-style: none;
-    }
-
-    .flexListA{
-        padding: 3px;
-        list-style: none;
-    }
-
-    .lD{
-        padding: 5px;
-        cursor: pointer;
-    }
-
-    .lD > ul{
-        display: none;
-        list-style: none;
-    }
-
-    .anList{
-        padding: 3px;
-        list-style: none;
-    }
-
-    .roamList{
-        padding: 3px;
-        list-style: none;
-    }
-
-    .trampList{
-        padding: 3px;
-        list-style: none;
-    }
-
-    .flexListD{
+    .listaAgentes{
         padding: 3px;
         list-style: none;
     }
@@ -326,8 +281,8 @@ nav{
         justify-content: space-between;
     }
 
-    a{
-        text-decoration: none;
+    .abierta > ul{
+        display: list-item;
     }
 
     /*Estilo para el indice horizontal*/

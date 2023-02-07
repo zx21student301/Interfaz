@@ -34,30 +34,20 @@ let descFlexD = [];
 
 let arrays = [hardBreacher,entry,support,flexAtac,ancla,roamer,trampero,flexDefen];
 
-let listaAbierta= false;
-
 let agente = {};
 
 function principal() {
-    let liA = document.getElementsByClassName("lA");
 
-    for (i = 0; i < liA.length; i++) {
-        liA[i].setAttribute("onclick", "abrirSublistaA(" + i + ")");
-        $(liA[i]).click(cambiarDiv);
-        liA[i].setAttribute("abierta","false");
+    crearLista();
+
+    let lAgen = $(".lAgen").toArray();
+
+    for (i = 0; i < lAgen.length; i++) {
+        $(lAgen[i]).click(cambiarDiv);
+        $(lAgen[i]).click(abrirSublista);
     }
 
-    let liD = document.getElementsByClassName("lD");
-
-    for (let i = 0; i < liD.length; i++) {
-        liD[i].setAttribute("onclick", "abrirSublistaD(" + i + ")")
-        liD[i].setAttribute("abierta","false");
-
-    }
-
-    let listaHb = document.getElementsByClassName("hbList");
-
-    for (let index = 0; index < listaHb.length; index++) {
+    for (let index = 0; index < arrays.length; index++) {
         listaHb[index].setAttribute("id",index);
     }
 
@@ -67,6 +57,21 @@ function principal() {
         imgHb.setAttribute("src","js/img/r6icons/svg/"+hardBreacher[index]+".svg");
         imgHb.setAttribute("style","width:50px;")
         spanHb[index].appendChild(imgHb);        
+    }
+}
+
+function crearLista(){
+
+    let agentes = $(".lAgen").toArray();
+
+    for (let i = 0; i < agentes.length; i++) {
+        for (let j = 0; j < arrays[i].length; j++) {
+            a = {
+                nombre : arrays[i][j]
+            }
+            let li = `<li>${a.nombre}</li>`
+            $(".lAgen").children("ul")[i].append(li)
+        }
     }
 }
 
@@ -209,4 +214,19 @@ function abrirSublistaD(num){
         }
     }
 
+}
+
+function abrirSublista(){
+    let abiertos = $(".abierta").toArray().length;
+
+    if (abiertos < 1){
+        $(this).addClass("abierta");
+    }else{
+        if($(this).hasClass("abierta")){
+            $(".titulos").find(".lAgen").removeClass("abierta");
+        }else{
+            $(".titulos").find(".lAgen").removeClass("abierta");
+            $(this).addClass("abierta");
+        }
+    }
 }
