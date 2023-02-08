@@ -1,108 +1,257 @@
-body{
-    background: url("https://static-dm.akamaized.net/siege/prod/0342b011a5f0107d106a49decafaf050.png") no-repeat; 
+/*Estilo para el background del body*/
+body {
+    background: url("https://static-dm.akamaized.net/siege/prod/0342b011a5f0107d106a49decafaf050.png") no-repeat center;
     background-size: 100% 100%;
+    padding-top: 10px;
 }
-.cabecera{
-    height:1.5em;
+
+/*Estilo para la cabecera superior de la página*/
+.cabecera {
+    height: 3.5em;
     text-align: right;
     margin-bottom: 10px;
     padding: 5px;
     min-width: 250px;
     flex-wrap: wrap;
-    background-color: black;
+    border-bottom: #ffffff 2px solid;
 }
-    .fb{
-        height: 25px;
-        width: 25px;
-        float: right;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .ig{
-        height: 25px;
-        width: 25px;
-        float: right;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .twitch{
-        height: 25px;
-        width: 25px;
-        float:right;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .twit{
-        height: 25px;
-        width: 25px;
-        float:right;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .ubiLogo{
-        float: left;
-        width: 100px;
-        height: 30px;
-        margin-left: 20px;
-    }
-    
-.titulo{
-    margin:10px;
+
+/*Estilo para los logos de las redes sociales*/
+.fb {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ig {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.twitch {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.twit {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ubiLogo {
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+/*Estilo para el titulo central de la página*/
+.titulo {
     margin-top: 15px;
     height: 100px;
     text-align: center;
     flex-wrap: wrap;
     min-width: 250px;
 }
-    .center{
-        float: left;
-        width: 100%;
-    }
-        .r6Titulo{
-            width: 350px;
-        }
 
-.menu{
-    margin: 10px;
+.center {
+    float: left;
+    width: 100%;
+}
+
+/*Estilo para el logo principal de la página*/
+.r6Titulo {
+    width: 350px;
+}
+
+/*Estilo para la barra de navegación de la página*/
+nav{
+    position: relative;
+    top:0;
+    z-index: 1;
+    background-color: black;
+}
+
+/*Estilo para el menu de la barra de navegación*/
+.menu {
+    padding: 10px;
+    margin-bottom:10px;
+    margin-top: 10px;
     text-align: center;
     flex-wrap: wrap;
     min-width: 250px;
 }
-    .li_menu{
-        display: inline;
-        text-decoration: none;
-        margin: 70px;
-        padding: 10px;
-    }
-    .li_menu:hover{
-        color:rgba(0, 255, 229, 0.39);
-        background: linear-gradient(0deg,rgba(206, 209, 0, 0.938),rgba(0,255,230,0) 50%);
-        border-bottom: 5px solid rgba(202, 199, 4, 0.575);
-    }
-        .URLInicio, .URLNoticias, .URLAgentes, .URLModMap, .URLEsports{
-            text-decoration: none;
-            color: black;
-            font-family: 'Ghost Clan 3D', sans-serif;
-            font-weight: bold;
-            font-size: 25px;
-        }
 
-.indice{
-    border: 5px solid black;
-    float:left;
-    width:20%;
+/*Estilo para la lista del menu (responsiva)*/
+.lista_menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*Estilo para la lista del menu*/
+@media (min-width: 759px){
+    nav{
+        position: sticky;
+        top:0;
+        z-index: 1;
+        background-color: black;
+    }
+
+    .lista_menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+/*Estilo para cada elemento de la lista del menu*/
+.URLInicio,
+.URLNoticias,
+.URLAgentes,
+.URLModMap,
+.URLEsports {
+    text-decoration: none;
+    color: #BFBA9F;
+    font-family: 'Ghost Clan 3D', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.URLInicio:hover,
+.URLNoticias:hover,
+.URLAgentes:hover,
+.URLModMap:hover,
+.URLEsports:hover {
+    color: #ffffff;
+}
+
+.li_menu {
+    font-family: 'Ghost Clan 3D', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.li_menu:hover {
+    background: linear-gradient(0deg, rgba(251, 255, 0, 0.808), rgba(0, 255, 230, 0) 50%);
+    border-bottom: 5px solid rgba(238, 255, 0, 0.39);
+}
+
+/*Estilo para el cuerpo de la página*/
+.cuerpo {
     flex-wrap: wrap;
     min-width: 250px;
 }
 
-.contenido{
-    border: 5px solid black;
+/*Estilo para el pie de la página*/
+.pie {
+    margin-top: 40px;
     flex-wrap: wrap;
     min-width: 250px;
 }
 
-.pie{
-    border: 5px solid black;
-    flex-wrap: wrap;
-    min-width: 250px;
+/*Estilo para la lista del pie*/
+.listaPie{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    width: 100%;
+}
+
+.liPie1, .liPie2{
+    width: 40%;
+}
+
+.liPie3{
+    width: 20%;
+}
+
+/*Estilo para el primer elemento de la lista*/
+.servicioCliente {
+    width: 40%;
+}
+
+/*Estilo para el contenido del primer elemento de la lista*/
+.titulo_sc {
+    font-size: 20px;
+    font-family:'Ghost Clan', sans-serif;
+    letter-spacing: 2px;
+    color:black;
+}
+
+.listCliente{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.soporte {
+    color:white;
+    text-decoration: none;
+    font-family: 'Navine Demo', sans-serif;
+}
+
+.soporte:hover{
+    color:rgba(251, 255, 0, 0.5);
+}
+
+/*Estilo para el segundo elemento de la lista*/
+.infoAdicional {
+    width: 40%;
+}
+
+/*Estilo para el contenido del segundo elemento de la lista*/
+.listInfo{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+}
+
+.info_list a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Navine Demo', sans-serif;
+}
+
+.info_list a:hover{
+    color:rgba(251, 255, 0, 0.5);
+    text-decoration: none;
+}
+
+.titulo_ia {
+    font-size: 20px;
+    font-family:'Ghost Clan', sans-serif;
+    letter-spacing: 2px;
+    color:black;
+}
+
+/*Estilo para el tercer elemento de la lista*/
+.pegi18 {
+    position: relative;
+    top:40%;
+    width: 20%;
+    text-align: center;
+}
+
+.logo_18 {
+    width: 60px;
 }
