@@ -320,6 +320,12 @@ nav{
 }
 
 /*Estilo para el contenido del primer elemento de la lista*/
+.listCliente{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+}
+
 .titulo_sc {
     font-size: 20px;
     font-family:'Ghost Clan', sans-serif;
@@ -343,6 +349,12 @@ nav{
 }
 
 /*Estilo para el contenido del segundo elemento de la lista*/
+.listInfo{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+}
+
 .info_list a{
     color:white;
     text-decoration: none;
@@ -352,11 +364,6 @@ nav{
 .info_list a:hover{
     color:rgba(255, 0, 0, 0.5);
     text-decoration: none;
-}
-
-.listCliente{
-    display: flex;
-    flex-flow: column wrap;
 }
 
 .titulo_ia {

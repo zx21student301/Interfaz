@@ -196,12 +196,13 @@ nav{
     font-size: 20px;
     font-family:'Ghost Clan', sans-serif;
     letter-spacing: 2px;
-    color:black;
+    color:rgba(251, 255, 0, 0.87);
 }
 
 .listCliente{
     display: flex;
     flex-flow: column wrap;
+    list-style: none;
 }
 
 .soporte {
@@ -211,7 +212,7 @@ nav{
 }
 
 .soporte:hover{
-    color:rgba(251, 255, 0, 0.5);
+    color:rgba(251, 255, 0, 0.87);
 }
 
 /*Estilo para el segundo elemento de la lista*/
@@ -233,7 +234,7 @@ nav{
 }
 
 .info_list a:hover{
-    color:rgba(251, 255, 0, 0.5);
+    color:rgba(251, 255, 0, 0.87);
     text-decoration: none;
 }
 
@@ -241,7 +242,7 @@ nav{
     font-size: 20px;
     font-family:'Ghost Clan', sans-serif;
     letter-spacing: 2px;
-    color:black;
+    color:rgba(251, 255, 0, 0.87);
 }
 
 /*Estilo para el tercer elemento de la lista*/
