@@ -32,7 +32,7 @@ let roamer = {
 
 let trampero = {
     nombre : ["kapkan", "lesion", "frost", "ela", "goyo", "thorn", "azami"],
-    velBlin : [[2,2],[2,2],[2,2],[3,1],[2,2],[2,2],[2,2]]
+    velBlin : [[2,2],[2,2],[2,2],[3,1],[3,1],[2,2],[2,2]]
 }
 
 let flexDefen = {
