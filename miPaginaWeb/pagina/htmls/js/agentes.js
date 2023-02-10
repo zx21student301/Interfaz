@@ -45,12 +45,18 @@ let arrays = [hardBreacher,entry,support,flexAtac,ancla,roamer,trampero,flexDefe
 function principal() {
 
     crearLista();
+    crearListaO();
 
     let lAgen = $(".lAgen").toArray();
+    let lAgenO = $(".lAgenO").toArray();
 
     for (i = 0; i < lAgen.length; i++) {
         $(lAgen[i]).click(cambiarDiv);
         $(lAgen[i]).click(abrirSublista);
+    }
+
+    for (i = 0; i < lAgenO.length; i++) {
+        $(lAgen[i]).click(cambiarDivO);
     }
 }
 
@@ -76,7 +82,35 @@ function crearLista(){
             $(this).children("ul").append(
                 `<li><img src='js/img/r6icons/svg/${agen.nombre}.svg' style='width:50px;'>${agen.nombre}</li>`
             );
+        }
+        cont++;
+    });
+}
+
+function crearListaO(){
+
+    let cont = 0;
+
+    $(".lAgenO").each(function(){
+
+        ul = {
+            id : cont
+        }
+
+        let ulAgen = $("<ul>",ul);
+
+        $(this).append(ulAgen);
+
+        for (let i = 0; i < arrays[cont].nombre.length; i++) {
+            agen = {
+                nombre : arrays[cont].nombre[i]
             }
+
+            $(this).children("ul").append(
+                `<li style="display:none;"></li>`
+            );
+        }
+
         cont++;
     });
 }
@@ -97,6 +131,43 @@ function abrirSublista(){
 }
 
 function cambiarDiv() {
+    idTipo = $(this).children("ul").attr("id");
+    idNum = $(this).children("ul").children();
+
+    $("#rowCard").empty();
+
+    for (let index = 0; index < idNum.length; index++) {
+        agente = {
+            nombre : arrays[idTipo].nombre[index],
+            imagen : 'js/img/agentes/'+arrays[idTipo].nombre[index]+'.png',
+            velBlin : arrays[idTipo].velBlin[index] 
+        }
+
+        $("#rowCard").append(
+            '<div class="card col-md-3">'+
+            '   <div class="imgBx">'+
+            `        <img src="${agente.imagen}">`+
+            '   </div>'+
+            '   <div class="contentBx">'+
+            `       <h2>${agente.nombre.toUpperCase()}</h2>`+
+            `       <div class="vel _${agente.velBlin[0]}">`+
+            '           <h3>Velocidad :</h3>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '       </div>'+
+            `       <div class="blin _${agente.velBlin[1]}">`+
+            '           <h3>Blindaje :</h3>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '           <span></span>'+
+            '       </div>'+
+            '   </div>'+
+            '</div');
+    }
+}
+
+function cambiarDivO(){
     idTipo = $(this).children("ul").attr("id");
     idNum = $(this).children("ul").children();
 
