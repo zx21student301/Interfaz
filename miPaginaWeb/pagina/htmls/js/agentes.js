@@ -64,9 +64,10 @@ function principal() {
 
 function cargarDiv() {
     idTipo = 0;
-    idNum = arrays[idTipo].lenght;
 
     for (let i = 0; i < arrays.length; i++) {
+
+        idNum = arrays[idTipo].nombre.length;
 
         for (let j = 0; j < idNum; j++) {
             agente = {
@@ -98,6 +99,7 @@ function cargarDiv() {
                 '</div');
         }
         console.log(idTipo)
+        console.log(idNum)
         idTipo++;
     }
 }
