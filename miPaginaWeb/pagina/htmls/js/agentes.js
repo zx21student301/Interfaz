@@ -1,51 +1,53 @@
 onload = principal
 
 let hardBreacher = {
-    nombre : ["thermite", "hibana", "ace", "maverick"],
-    velBlin : [[2,2],[3,1],[2,2],[3,1]]
+    nombre: ["thermite", "hibana", "ace", "maverick"],
+    velBlin: [[2, 2], [3, 1], [2, 2], [3, 1]]
 }
 
 let entry = {
-    nombre : ["ash", "zofia", "jackal", "sledge", "buck", "nokk", "dokkaebi", "lion", "finka", "amaru", "ying", "iq", "blitz", "iana"],
-    velBlin : [[3,1],[1,3],[2,2],[1,3],[2,2],[2,2],[3,1],[2,2],[2,2],[2,2],[2,2],[3,1],[2,2],[2,2]]
+    nombre: ["ash", "zofia", "jackal", "sledge", "buck", "nokk", "dokkaebi", "lion", "finka", "amaru", "ying", "iq", "blitz", "iana"],
+    velBlin: [[3, 1], [1, 3], [2, 2], [1, 3], [2, 2], [2, 2], [3, 1], [2, 2], [2, 2], [2, 2], [2, 2], [3, 1], [2, 2], [2, 2]]
 }
 
 let support = {
-    nombre : ["thatcher", "twitch", "kali", "flores"],
-    velBlin : [[2,2],[2,2],[2,2],[2,2]]
+    nombre: ["thatcher", "twitch", "kali", "flores"],
+    velBlin: [[2, 2], [2, 2], [2, 2], [2, 2]]
 }
 
 let flexAtac = {
-    nombre : ["nomad", "capitão", "fuze", "glaz", "montagne", "gridlock", "blackbeard", "osa", "zero"],
-    velBlin : [[2,2],[3,1],[1,3],[2,2],[1,3],[1,3],[2,2],[1,3],[3,1]]
+    nombre: ["nomad", "capitão", "fuze", "glaz", "montagne", "gridlock", "blackbeard", "osa", "zero"],
+    velBlin: [[2, 2], [3, 1], [1, 3], [2, 2], [1, 3], [1, 3], [2, 2], [1, 3], [3, 1]]
 }
 
 let ancla = {
-    nombre : ["rook", "doc", "maestro", "smoke", "echo", "melusi", "warden", "tachanka", "mira", "kaid"],
-    velBlin : [[1,3],[1,3],[1,3],[2,2],[2,2],[1,3],[2,2],[1,3],[1,3],[1,3]]
+    nombre: ["rook", "doc", "maestro", "smoke", "echo", "melusi", "warden", "tachanka", "mira", "kaid"],
+    velBlin: [[1, 3], [1, 3], [1, 3], [2, 2], [2, 2], [1, 3], [2, 2], [1, 3], [1, 3], [1, 3]]
 }
 
 let roamer = {
-    nombre : ["jäger", "valkyrie", "vigil", "alibi", "oryx", "caveira"],
-    velBlin : [[2,2],[2,2],[3,1],[3,1],[2,2],[3,1]]
+    nombre: ["jäger", "valkyrie", "vigil", "alibi", "oryx", "caveira"],
+    velBlin: [[2, 2], [2, 2], [3, 1], [3, 1], [2, 2], [3, 1]]
 }
 
 let trampero = {
-    nombre : ["kapkan", "lesion", "frost", "ela", "goyo", "thorn", "azami"],
-    velBlin : [[2,2],[2,2],[2,2],[3,1],[3,1],[2,2],[2,2]]
+    nombre: ["kapkan", "lesion", "frost", "ela", "goyo", "thorn", "azami"],
+    velBlin: [[2, 2], [2, 2], [2, 2], [3, 1], [3, 1], [2, 2], [2, 2]]
 }
 
 let flexDefen = {
-    nombre : ["bandit", "castle", "mute", "clash", "mozzie", "wamai", "aruni", "thunderbird","solis"],
-    velBlin : [[3,1],[2,2],[1,3],[1,3],[2,2],[2,2],[1,3],[2,2],[2,2]]
+    nombre: ["bandit", "castle", "mute", "clash", "mozzie", "wamai", "aruni", "thunderbird", "solis"],
+    velBlin: [[3, 1], [2, 2], [1, 3], [1, 3], [2, 2], [2, 2], [1, 3], [2, 2], [2, 2]]
 }
 
-let arrays = [hardBreacher,entry,support,flexAtac,ancla,roamer,trampero,flexDefen];
+let arrays = [hardBreacher, entry, support, flexAtac, ancla, roamer, trampero, flexDefen];
 
 function principal() {
 
     crearLista();
     crearListaO();
+
+    cargarDiv();
 
     let lAgen = $(".lAgen").toArray();
     let lAgenO = $(".lAgenO").toArray();
@@ -60,23 +62,63 @@ function principal() {
     }
 }
 
-function crearLista(){
+function cargarDiv() {
+    idTipo = 0;
+    idNum = arrays[idTipo].lenght;
+
+    for (let i = 0; i < arrays.length; i++) {
+
+        for (let j = 0; j < idNum; j++) {
+            agente = {
+                nombre: arrays[idTipo].nombre[j],
+                imagen: 'js/img/agentes/' + arrays[idTipo].nombre[j] + '.png',
+                velBlin: arrays[idTipo].velBlin[j]
+            }
+
+            $("#rowCard").append(
+                '<div class="card col-md-3">' +
+                '   <div class="imgBx">' +
+                `        <img src="${agente.imagen}">` +
+                '   </div>' +
+                '   <div class="contentBx">' +
+                `       <h2>${agente.nombre.toUpperCase()}</h2>` +
+                `       <div class="vel _${agente.velBlin[0]}">` +
+                '           <h3>Velocidad :</h3>' +
+                '           <span></span>' +
+                '           <span></span>' +
+                '           <span></span>' +
+                '       </div>' +
+                `       <div class="blin _${agente.velBlin[1]}">` +
+                '           <h3>Blindaje :</h3>' +
+                '           <span></span>' +
+                '           <span></span>' +
+                '           <span></span>' +
+                '       </div>' +
+                '   </div>' +
+                '</div');
+        }
+        console.log(idTipo)
+        idTipo++;
+    }
+}
+
+function crearLista() {
 
     let cont = 0;
 
-    $(".lAgen").each(function(){
+    $(".lAgen").each(function () {
 
         ul = {
-            id : cont
+            id: cont
         }
 
-        let ulAgen = $("<ul>",ul);
+        let ulAgen = $("<ul>", ul);
 
         $(this).append(ulAgen);
 
         for (let i = 0; i < arrays[cont].nombre.length; i++) {
             agen = {
-                nombre : arrays[cont].nombre[i]
+                nombre: arrays[cont].nombre[i]
             }
 
             $(this).children("ul").append(
@@ -87,23 +129,23 @@ function crearLista(){
     });
 }
 
-function crearListaO(){
+function crearListaO() {
 
     let cont = 0;
 
-    $(".lAgenO").each(function(){
+    $(".lAgenO").each(function () {
 
         ul = {
-            id : cont
+            id: cont
         }
 
-        let ulAgen = $("<ul>",ul);
+        let ulAgen = $("<ul>", ul);
 
         $(this).append(ulAgen);
 
         for (let i = 0; i < arrays[cont].nombre.length; i++) {
             agen = {
-                nombre : arrays[cont].nombre[i]
+                nombre: arrays[cont].nombre[i]
             }
 
             $(this).children("ul").append(
@@ -115,15 +157,15 @@ function crearListaO(){
     });
 }
 
-function abrirSublista(){
+function abrirSublista() {
     let abiertos = $(".abierta").toArray().length;
 
-    if (abiertos < 1){
+    if (abiertos < 1) {
         $(this).addClass("abierta");
-    }else{
-        if($(this).hasClass("abierta")){
+    } else {
+        if ($(this).hasClass("abierta")) {
             $(".titulos").find(".lAgen").removeClass("abierta");
-        }else{
+        } else {
             $(".titulos").find(".lAgen").removeClass("abierta");
             $(this).addClass("abierta");
         }
@@ -138,36 +180,36 @@ function cambiarDiv() {
 
     for (let index = 0; index < idNum.length; index++) {
         agente = {
-            nombre : arrays[idTipo].nombre[index],
-            imagen : 'js/img/agentes/'+arrays[idTipo].nombre[index]+'.png',
-            velBlin : arrays[idTipo].velBlin[index] 
+            nombre: arrays[idTipo].nombre[index],
+            imagen: 'js/img/agentes/' + arrays[idTipo].nombre[index] + '.png',
+            velBlin: arrays[idTipo].velBlin[index]
         }
 
         $("#rowCard").append(
-            '<div class="card col-md-3">'+
-            '   <div class="imgBx">'+
-            `        <img src="${agente.imagen}">`+
-            '   </div>'+
-            '   <div class="contentBx">'+
-            `       <h2>${agente.nombre.toUpperCase()}</h2>`+
-            `       <div class="vel _${agente.velBlin[0]}">`+
-            '           <h3>Velocidad :</h3>'+
-            '           <span></span>'+
-            '           <span></span>'+
-            '           <span></span>'+
-            '       </div>'+
-            `       <div class="blin _${agente.velBlin[1]}">`+
-            '           <h3>Blindaje :</h3>'+
-            '           <span></span>'+
-            '           <span></span>'+
-            '           <span></span>'+
-            '       </div>'+
-            '   </div>'+
+            '<div class="card col-md-3">' +
+            '   <div class="imgBx">' +
+            `        <img src="${agente.imagen}">` +
+            '   </div>' +
+            '   <div class="contentBx">' +
+            `       <h2>${agente.nombre.toUpperCase()}</h2>` +
+            `       <div class="vel _${agente.velBlin[0]}">` +
+            '           <h3>Velocidad :</h3>' +
+            '           <span></span>' +
+            '           <span></span>' +
+            '           <span></span>' +
+            '       </div>' +
+            `       <div class="blin _${agente.velBlin[1]}">` +
+            '           <h3>Blindaje :</h3>' +
+            '           <span></span>' +
+            '           <span></span>' +
+            '           <span></span>' +
+            '       </div>' +
+            '   </div>' +
             '</div');
     }
 }
 
-function cambiarDivO(){
+function cambiarDivO() {
     idTipo = $(this).children("ul").attr("id");
     idNum = $(this).children("ul").children();
 
@@ -175,31 +217,31 @@ function cambiarDivO(){
 
     for (let index = 0; index < idNum.length; index++) {
         agente = {
-            nombre : arrays[idTipo].nombre[index],
-            imagen : 'js/img/agentes/'+arrays[idTipo].nombre[index]+'.png',
-            velBlin : arrays[idTipo].velBlin[index] 
+            nombre: arrays[idTipo].nombre[index],
+            imagen: 'js/img/agentes/' + arrays[idTipo].nombre[index] + '.png',
+            velBlin: arrays[idTipo].velBlin[index]
         }
 
         $("#rowCard").append(
-            '<div class="card col-md-3">'+
-            '   <div class="imgBx">'+
-            `        <img src="${agente.imagen}">`+
-            '   </div>'+
-            '   <div class="contentBx">'+
-            `       <h2>${agente.nombre.toUpperCase()}</h2>`+
-            `       <div class="vel _${agente.velBlin[0]}">`+
-            '           <h3>Velocidad :</h3>'+
-            '           <span></span>'+
-            '           <span></span>'+
-            '           <span></span>'+
-            '       </div>'+
-            `       <div class="blin _${agente.velBlin[1]}">`+
-            '           <h3>Blindaje :</h3>'+
-            '           <span></span>'+
-            '           <span></span>'+
-            '           <span></span>'+
-            '       </div>'+
-            '   </div>'+
+            '<div class="card col-md-3">' +
+            '   <div class="imgBx">' +
+            `        <img src="${agente.imagen}">` +
+            '   </div>' +
+            '   <div class="contentBx">' +
+            `       <h2>${agente.nombre.toUpperCase()}</h2>` +
+            `       <div class="vel _${agente.velBlin[0]}">` +
+            '           <h3>Velocidad :</h3>' +
+            '           <span></span>' +
+            '           <span></span>' +
+            '           <span></span>' +
+            '       </div>' +
+            `       <div class="blin _${agente.velBlin[1]}">` +
+            '           <h3>Blindaje :</h3>' +
+            '           <span></span>' +
+            '           <span></span>' +
+            '           <span></span>' +
+            '       </div>' +
+            '   </div>' +
             '</div');
     }
 }
