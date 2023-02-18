@@ -163,6 +163,11 @@ nav{
     min-width: 250px;
 }
 
+/*Estilo para el espaciado entre cartas*/
+.card_{
+    padding: 30px;
+}
+
 /*Estilo para el pie de la página*/
 .pie {
     margin-top: 40px;

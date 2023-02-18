@@ -169,6 +169,7 @@ nav{
     flex-wrap: wrap;
     min-width: 250px;
     text-align: center;
+    color:white;
 }
 
 /*Estilo para el indice lateral (responsive)*/

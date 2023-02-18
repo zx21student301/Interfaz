@@ -1,5 +1,6 @@
 onload = principal
 
+//diccionarios que contienen los datos necesarios para crear las tarjetas
 let hardBreacher = {
     nombre: ["thermite", "hibana", "ace", "maverick"],
     velBlin: [[2, 2], [3, 1], [2, 2], [3, 1]]
@@ -40,8 +41,10 @@ let flexDefen = {
     velBlin: [[3, 1], [2, 2], [1, 3], [1, 3], [2, 2], [2, 2], [1, 3], [2, 2], [2, 2]]
 }
 
+//array que contiene todos los diccionarios creados anteriormente
 let arrays = [hardBreacher, entry, support, flexAtac, ancla, roamer, trampero, flexDefen];
 
+//funcion que se ejecuta nada más cargar la página y define el resto de funciones
 function principal() {
 
     crearLista();
@@ -58,10 +61,11 @@ function principal() {
     }
 
     for (i = 0; i < lAgenO.length; i++) {
-        $(lAgen[i]).click(cambiarDivO);
+        $(lAgenO[i]).click(cambiarDivO);
     }
 }
 
+//cargar en el div todas las cards con sus datos
 function cargarDiv() {
     idTipo = 0;
 
@@ -98,12 +102,12 @@ function cargarDiv() {
                 '   </div>' +
                 '</div');
         }
-        console.log(idTipo)
-        console.log(idNum)
+
         idTipo++;
     }
 }
 
+//crea la lista y sublista de los agentes
 function crearLista() {
 
     let cont = 0;
@@ -131,6 +135,7 @@ function crearLista() {
     });
 }
 
+//crea la lista y sublista de los agentes (responsive)
 function crearListaO() {
 
     let cont = 0;
@@ -151,14 +156,14 @@ function crearListaO() {
             }
 
             $(this).children("ul").append(
-                `<li style="display:none;"></li>`
+                `<li style="display:none;">${agen.nombre}</li>`
             );
         }
-
         cont++;
     });
 }
 
+//abre la sublista de agentes
 function abrirSublista() {
     let abiertos = $(".abierta").toArray().length;
 
@@ -174,6 +179,7 @@ function abrirSublista() {
     }
 }
 
+//cambia el contenido del div vaciandolo y creando las cards correspondientes
 function cambiarDiv() {
     idTipo = $(this).children("ul").attr("id");
     idNum = $(this).children("ul").children();
@@ -211,6 +217,7 @@ function cambiarDiv() {
     }
 }
 
+//cambia el contenido del div vaciandolo y creando las cards correspondientes (responsive)
 function cambiarDivO() {
     idTipo = $(this).children("ul").attr("id");
     idNum = $(this).children("ul").children();
